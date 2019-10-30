@@ -65,3 +65,4 @@ dist/bundle.js
 .DS_Store
 
 build
+./build/index.js
