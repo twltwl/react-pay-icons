@@ -23,7 +23,7 @@
 			"@babel/react"
 		]
 	},
-	"repository": "https://github.com/paveli/react-payment-icons",
+	"repository": "https://github.com/paveli/react-payment-icons-inline",
 	"engines": {
 		"node": ">=8.0.0"
 	},
