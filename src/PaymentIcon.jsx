@@ -1,4 +1,3 @@
-import "regenerator-runtime/runtime";
 import React, { useState, useEffect } from "react";
 import PropTypes from "prop-types";
 import {
@@ -145,9 +144,14 @@ function PaymentIcon({ style, className, icon, transparent }) {
 
 	useEffect(() => {
 		(() => {
-			import(`${getPaymentImage(icon, transparent)}`).then(img => {
-				setSvg(img);
-			});
+			import(`${getPaymentImage(icon, transparent)}`).then(
+				img => {
+					setSvg(img);
+				},
+				err => {
+					throw new Error(err);
+				}
+			);
 		})();
 	}, []);
 
