@@ -28,5 +28,8 @@ module.exports = {
 			commonjs: "react-dom",
 			amd: "react-dom"
 		}
+	},
+	output: {
+		chunkFilename: "[name].[chunkhash].js"
 	}
 };
