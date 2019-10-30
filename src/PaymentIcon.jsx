@@ -1,4 +1,3 @@
-import "core-js/stable";
 import "regenerator-runtime/runtime";
 import React, { useState, useEffect } from "react";
 import PropTypes from "prop-types";
@@ -145,8 +144,8 @@ function PaymentIcon({ style, className, icon, transparent }) {
 	const [svg, setSvg] = useState();
 
 	useEffect(() => {
-		(async () => {
-			await import(`${getPaymentImage(icon, transparent)}`).then(img => {
+		(() => {
+			import(`${getPaymentImage(icon, transparent)}`).then(img => {
 				setSvg(img);
 			});
 		})();
@@ -158,9 +157,17 @@ function PaymentIcon({ style, className, icon, transparent }) {
 			className={className}
 			dangerouslySetInnerHTML={{
 				__html: svg ? svg.default : ""
+				// __html: require(`${getPaymentImage(icon, transparent)}`)
 			}}
 		></div>
 	);
+
+	// <img
+	// 	src={require(`${getPaymentImage(icon, transparent)}`)}
+	// 	style={style}
+	// 	className={className}
+	// 	alt={`${icon} payment icon`}
+	// />
 }
 
 export default PaymentIcon;
