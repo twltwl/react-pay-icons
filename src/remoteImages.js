@@ -1,4 +1,5 @@
-const AMAZON_URL = 'https://s3-sa-east-1.amazonaws.com/azpay-checkout/payment-methods';
+const AMAZON_URL = "./img/svg";
+// const AMAZON_URL = 'https://s3-sa-east-1.amazonaws.com/azpay-checkout/payment-methods';
 
 // export const FLAGS_SVGS_URLS = {
 //   amex: 'https://s3-sa-east-1.amazonaws.com/azpay-checkout/payment-methods/amex.svg',
@@ -26,92 +27,92 @@ const AMAZON_URL = 'https://s3-sa-east-1.amazonaws.com/azpay-checkout/payment-me
 // };
 
 export function getFlagSvgUrl(key, transparent = false) {
-  const transparentStr = transparent ? '_transparent' : '';
-  const FLAGS_SVGS_URLS = {
-    adyen: `${AMAZON_URL}/adyen${transparentStr}.svg`,
-    amex: `${AMAZON_URL}/amex${transparentStr}.svg`,
-    aura: `${AMAZON_URL}/aura${transparentStr}.svg`,
-    bin: `${AMAZON_URL}/bin${transparentStr}.svg`,
-    boleto: `${AMAZON_URL}/boleto${transparentStr}.svg`,
-    cirrus: `${AMAZON_URL}/cirrus${transparentStr}.svg`,
-    credit_card: `${AMAZON_URL}/credit-card${transparentStr}.svg`,
-    diners: `${AMAZON_URL}/diners${transparentStr}.svg`,
-    direct_debit: `${AMAZON_URL}/direct_debit${transparentStr}.svg`,
-    discover: `${AMAZON_URL}/discover${transparentStr}.svg`,
-    ebay: `${AMAZON_URL}/ebay${transparentStr}.svg`,
-    elo: `${AMAZON_URL}/elo${transparentStr}.svg`,
-    eway: `${AMAZON_URL}/eway${transparentStr}.svg`,
-    hipercard: `${AMAZON_URL}/hipercard${transparentStr}.svg`,
-    jcb: `${AMAZON_URL}/jcb${transparentStr}.svg`,
-    maestro: `${AMAZON_URL}/maestro${transparentStr}.svg`,
-    mastercard: `${AMAZON_URL}/mastercard${transparentStr}.svg`,
-    sage: `${AMAZON_URL}/sage${transparentStr}.svg`,
-    shopify: `${AMAZON_URL}/shopify${transparentStr}.svg`,
-    skrill: `${AMAZON_URL}/skrill${transparentStr}.svg`,
-    skrill_moneybookers: `${AMAZON_URL}/skrill_moneybookers${transparentStr}.svg`,
-    sodexo: `${AMAZON_URL}/sodexo${transparentStr}.svg`,
-    solo: `${AMAZON_URL}/solo${transparentStr}.svg`,
-    ticket: `${AMAZON_URL}/ticket${transparentStr}.svg`,
-    visa: `${AMAZON_URL}/visa${transparentStr}.svg`,
-    visa_electron: `${AMAZON_URL}/visa_electron${transparentStr}.svg`,
-    western: `${AMAZON_URL}/western${transparentStr}.svg`,
-    wirecard: `${AMAZON_URL}/wirecard${transparentStr}.svg`,
-  };
-  return FLAGS_SVGS_URLS[key];
+	const transparentStr = transparent ? "_transparent" : "";
+	const FLAGS_SVGS_URLS = {
+		adyen: `${AMAZON_URL}${transparentStr}/adyen.svg`,
+		amex: `${AMAZON_URL}${transparentStr}/amex.svg`,
+		aura: `${AMAZON_URL}${transparentStr}/aura.svg`,
+		bin: `${AMAZON_URL}${transparentStr}/bin.svg`,
+		boleto: `${AMAZON_URL}${transparentStr}/boleto.svg`,
+		cirrus: `${AMAZON_URL}${transparentStr}/cirrus.svg`,
+		credit_card: `${AMAZON_URL}${transparentStr}/credit-card.svg`,
+		diners: `${AMAZON_URL}${transparentStr}/diners.svg`,
+		direct_debit: `${AMAZON_URL}${transparentStr}/direct_debit.svg`,
+		discover: `${AMAZON_URL}${transparentStr}/discover.svg`,
+		ebay: `${AMAZON_URL}${transparentStr}/ebay.svg`,
+		elo: `${AMAZON_URL}${transparentStr}/elo.svg`,
+		eway: `${AMAZON_URL}${transparentStr}/eway.svg`,
+		hipercard: `${AMAZON_URL}${transparentStr}/hipercard.svg`,
+		jcb: `${AMAZON_URL}${transparentStr}/jcb.svg`,
+		maestro: `${AMAZON_URL}${transparentStr}/maestro.svg`,
+		mastercard: `${AMAZON_URL}${transparentStr}/mastercard.svg`,
+		sage: `${AMAZON_URL}${transparentStr}/sage.svg`,
+		shopify: `${AMAZON_URL}${transparentStr}/shopify.svg`,
+		skrill: `${AMAZON_URL}${transparentStr}/skrill.svg`,
+		skrill_moneybookers: `${AMAZON_URL}${transparentStr}/skrill_moneybookers.svg`,
+		sodexo: `${AMAZON_URL}${transparentStr}/sodexo.svg`,
+		solo: `${AMAZON_URL}${transparentStr}/solo.svg`,
+		ticket: `${AMAZON_URL}${transparentStr}/ticket.svg`,
+		visa: `${AMAZON_URL}${transparentStr}/visa.svg`,
+		visa_electron: `${AMAZON_URL}${transparentStr}/visa_electron.svg`,
+		western: `${AMAZON_URL}${transparentStr}/western.svg`,
+		wirecard: `${AMAZON_URL}${transparentStr}/wirecard.svg`
+	};
+	return FLAGS_SVGS_URLS[key];
 }
 
 export function getBankSvgUrls(key, transparent = false) {
-  const transparentStr = transparent ? '_transparent' : '';
-  const BANKS_SVGS_URLS = {
-    boleto: `${AMAZON_URL}/boleto${transparentStr}.svg`,
-    bb: `${AMAZON_URL}/bb${transparentStr}.svg`,
-    bradesco: `${AMAZON_URL}/bradesco${transparentStr}.svg`,
-    caixa: `${AMAZON_URL}/caixa${transparentStr}.svg`,
-    hsbc: `${AMAZON_URL}/hsbc${transparentStr}.svg`,
-    itau: `${AMAZON_URL}/itau${transparentStr}.svg`,
-    santander: `${AMAZON_URL}/santander${transparentStr}.svg`,
-  };
+	const transparentStr = transparent ? "_transparent" : "";
+	const BANKS_SVGS_URLS = {
+		boleto: `${AMAZON_URL}/boleto.svg`,
+		bb: `${AMAZON_URL}/bb.svg`,
+		bradesco: `${AMAZON_URL}/bradesco.svg`,
+		caixa: `${AMAZON_URL}/caixa.svg`,
+		hsbc: `${AMAZON_URL}/hsbc.svg`,
+		itau: `${AMAZON_URL}/itau.svg`,
+		santander: `${AMAZON_URL}/santander.svg`
+	};
 
-  return BANKS_SVGS_URLS[key];
+	return BANKS_SVGS_URLS[key];
 }
 
 export function getFacilitatorSvgUrl(key, transparent = false) {
-  const transparentStr = transparent ? '_transparent' : '';
-  const FACILITATORS_SVGS_URLS = {
-    amazon: `${AMAZON_URL}/amazon${transparentStr}.svg`,
-    adiq: `${AMAZON_URL}/adiq${transparentStr}.svg`,
-    applepay: `${AMAZON_URL}/applepay${transparentStr}.svg`,
-    bitcoin: `${AMAZON_URL}/bitcoin${transparentStr}.svg`,
-    ebanx: `${AMAZON_URL}/ebanx${transparentStr}.svg`,
-    firstdata: `${AMAZON_URL}/firstdata${transparentStr}.svg`,
-    wallet: `${AMAZON_URL}/wallet${transparentStr}.svg`,
-    paypal: `${AMAZON_URL}/paypal${transparentStr}.svg`,
-    cielo: `${AMAZON_URL}/cielo${transparentStr}.svg`,
-    global: `${AMAZON_URL}/global${transparentStr}.svg`,
-    googlepay: `${AMAZON_URL}/googlepay${transparentStr}.svg`,
-    iugu: `${AMAZON_URL}/iugu${transparentStr}.svg`,
-    mercadopago: `${AMAZON_URL}/mercadopago${transparentStr}.svg`,
-    pagarme: `${AMAZON_URL}/pagarme${transparentStr}.svg`,
-    pagseguro: `${AMAZON_URL}/pagseguro${transparentStr}.svg`,
-    paghiper: `${AMAZON_URL}/paghiper${transparentStr}.png`,
-    rede: `${AMAZON_URL}/rede${transparentStr}.svg`,
-    stelo: `${AMAZON_URL}/stelo${transparentStr}.svg`,
-    stone: `${AMAZON_URL}/stone${transparentStr}.svg`,
-    elavon: `${AMAZON_URL}/elavon${transparentStr}.svg`,
-    getnet: `${AMAZON_URL}/getnet${transparentStr}.png`,
-    worldpay: `${AMAZON_URL}/worldpay${transparentStr}.svg`,
-    yapay: `${AMAZON_URL}/yapay${transparentStr}.svg`,
-  };
+	const transparentStr = transparent ? "/transparent" : "";
+	const FACILITATORS_SVGS_URLS = {
+		amazon: `${AMAZON_URL}${transparentStr}/amazon.svg`,
+		adiq: `${AMAZON_URL}${transparentStr}/adiq.svg`,
+		applepay: `${AMAZON_URL}${transparentStr}/applepay.svg`,
+		bitcoin: `${AMAZON_URL}${transparentStr}/bitcoin.svg`,
+		ebanx: `${AMAZON_URL}${transparentStr}/ebanx.svg`,
+		firstdata: `${AMAZON_URL}${transparentStr}/firstdata.svg`,
+		wallet: `${AMAZON_URL}${transparentStr}/wallet.svg`,
+		paypal: `${AMAZON_URL}${transparentStr}/paypal.svg`,
+		cielo: `${AMAZON_URL}${transparentStr}/cielo.svg`,
+		global: `${AMAZON_URL}${transparentStr}/global.svg`,
+		googlepay: `${AMAZON_URL}${transparentStr}/googlepay.svg`,
+		iugu: `${AMAZON_URL}${transparentStr}/iugu.svg`,
+		mercadopago: `${AMAZON_URL}${transparentStr}/mercadopago.svg`,
+		pagarme: `${AMAZON_URL}${transparentStr}/pagarme.svg`,
+		pagseguro: `${AMAZON_URL}${transparentStr}/pagseguro.svg`,
+		paghiper: `${AMAZON_URL}${transparentStr}/paghiper.png`,
+		rede: `${AMAZON_URL}${transparentStr}/rede.svg`,
+		stelo: `${AMAZON_URL}${transparentStr}/stelo.svg`,
+		stone: `${AMAZON_URL}${transparentStr}/stone.svg`,
+		elavon: `${AMAZON_URL}${transparentStr}/elavon.svg`,
+		getnet: `${AMAZON_URL}${transparentStr}/getnet.png`,
+		worldpay: `${AMAZON_URL}${transparentStr}/worldpay.svg`,
+		yapay: `${AMAZON_URL}${transparentStr}/yapay.svg`
+	};
 
-  return FACILITATORS_SVGS_URLS[key];
+	return FACILITATORS_SVGS_URLS[key];
 }
 
 export function getUnknownSvg(key, transparent = false) {
-  const transparentStr = transparent ? '_transparent' : '';
+	const transparentStr = transparent ? "/transparent" : "";
 
-  const UNKNOWN_SVGS_URLS = {
-    generic: `${AMAZON_URL}/generic${transparentStr}.svg`,
-  };
+	const UNKNOWN_SVGS_URLS = {
+		generic: `${AMAZON_URL}/generic.svg`
+	};
 
-  return UNKNOWN_SVGS_URLS[key];
+	return UNKNOWN_SVGS_URLS[key];
 }
