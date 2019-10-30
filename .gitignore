@@ -63,3 +63,5 @@ typings/
 dist/bundle.js
 
 .DS_Store
+
+build
