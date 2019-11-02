@@ -1,17 +1,21 @@
 {
 	"name": "react-payment-icons-inline",
-	"version": "1.0.10",
+	"version": "1.0.11",
 	"description": "Inline SVG Payment Icons for React applications",
-	"main": "./src/PaymentIcon.js",
+	"main": "./build/index.js",
+	"files": [
+		"./build/*"
+	],
 	"scripts": {
 		"test": "jest",
 		"test:watch": "yarn test -- --watch",
 		"start": "webpack-dev-server --config ./webpack.dev.js --mode development",
-		"lint": "eslint"
+		"lint": "eslint",
+		"build": "webpack --config ./webpack.prod.js --mode production"
 	},
 	"author": "Pavel Ivanov",
 	"license": "MIT",
-	"peerDsependencies": {
+	"peerDependencies": {
 		"prop-types": "^15.7.2",
 		"react": "^16.11.0",
 		"react-dom": "^16.11.0"
