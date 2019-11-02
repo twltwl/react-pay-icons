@@ -1,6 +1,6 @@
 {
 	"name": "react-payment-icons-inline",
-	"version": "1.0.13",
+	"version": "1.0.14",
 	"description": "Inline SVG Payment Icons for React applications",
 	"main": "./build/index.js",
 	"scripts": {
