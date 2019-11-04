@@ -1,0 +1,29 @@
+{
+	"parser": "babel-eslint",
+	"overrides": [
+		{
+			"files": ["bin/*.js", "lib/*.js"],
+			"excludedFiles": ["./build/*", "*.test.js"],
+			"rules": {
+				"quotes": ["error", "single"]
+			}
+		}
+	],
+	"parserOptions": {
+		"ecmaVersion": 6,
+		"sourceType": "module",
+		"ecmaFeatures": {
+			"jsx": true
+		},
+		"allowImportExportEverywhere": true
+	},
+	"plugins": [
+		// ...
+		"react-hooks"
+	],
+	"rules": {
+		// ...
+		"react-hooks/rules-of-hooks": "error"
+		//"react-hooks/exhaustive-deps": "warn"
+	}
+}
