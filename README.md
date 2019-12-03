@@ -8,6 +8,10 @@ TODO: Currently not all the icons are avalible. This issue came from the origian
 
 ## How to use
 
+```sh
+npm i react-payment-icons-inline
+```
+
 Using this component on your project.
 
 ```jsx
