@@ -4,5 +4,15 @@
 		"inline-react-svg",
 		"@babel/plugin-transform-modules-umd"
 	],
-	"presets": ["@babel/preset-env", "@babel/preset-react"]
+	"presets": [
+		[
+			"@babel/preset-env",
+			{
+				"targets": {
+					"esmodules": true
+				}
+			}
+		], 
+		"@babel/preset-react"
+	]
 }

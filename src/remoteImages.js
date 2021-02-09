@@ -1,55 +1,58 @@
-const ICONS_PATH = "./Icons";
-// const ICONS_PATH = 'https://s3-sa-east-1.amazonaws.com/azpay-checkout/payment-methods';
+const availableSvg = [
+  // Cards
+  "adyen",
+  "amex",
+  "aura",
+  "bin",
+  "boleto",
+  "cirrus",
+  "diners",
+  "direct_debit",
+  "discover",
+  "ebay",
+  "elo",
+  "eway",
+  "hipercard",
+  "jcb",
+  "maestro",
+  "mastercard",
+  "sage",
+  "shopify",
+  "skrill",
+  "skrill_moneybookers",
+  "sodexo",
+  "solo",
+  "ticket",
+  "visa",
+  "visa_electron",
+  "western",
+  "wirecard",
+  // Bank
+  "bb",
+  "bradesco",
+  "caixa",
+  "hsbc",
+  "itau",
+  "santander",
+];
 
-export function getFlagSvgUrl(key, transparent = false) {
-  const transparentStr = transparent ? "_transparent" : "";
-  const FLAGS_SVGS_URLS = {
-    adyen: `${ICONS_PATH}${transparentStr}/Adyen.js`,
-    amex: `${ICONS_PATH}${transparentStr}/Amex.js`,
-    aura: `${ICONS_PATH}${transparentStr}/Aura.js`,
-    bin: `${ICONS_PATH}${transparentStr}/Bin.js`,
-    boleto: `${ICONS_PATH}${transparentStr}/Boleto.js`,
-    cirrus: `${ICONS_PATH}${transparentStr}/Cirrus.js`,
-    credit_card: `${ICONS_PATH}${transparentStr}/Credit-card.js`,
-    diners: `${ICONS_PATH}${transparentStr}/Diners.js`,
-    direct_debit: `${ICONS_PATH}${transparentStr}/DirectDebit.js`,
-    discover: `${ICONS_PATH}${transparentStr}/Discover.js`,
-    ebay: `${ICONS_PATH}${transparentStr}/Ebay.js`,
-    elo: `${ICONS_PATH}${transparentStr}/Elo.js`,
-    eway: `${ICONS_PATH}${transparentStr}/Eway.js`,
-    hipercard: `${ICONS_PATH}${transparentStr}/Hipercard.js`,
-    jcb: `${ICONS_PATH}${transparentStr}/Jcb.js`,
-    maestro: `${ICONS_PATH}${transparentStr}/Maestro.js`,
-    mastercard: `${ICONS_PATH}${transparentStr}/Mastercard.js`,
-    sage: `${ICONS_PATH}${transparentStr}/Sage.js`,
-    shopify: `${ICONS_PATH}${transparentStr}/Shopify.js`,
-    skrill: `${ICONS_PATH}${transparentStr}/Skrill.js`,
-    skrill_moneybookers: `${ICONS_PATH}${transparentStr}/SkrillMoneybookers.js`,
-    sodexo: `${ICONS_PATH}${transparentStr}/Sodexo.js`,
-    solo: `${ICONS_PATH}${transparentStr}/Solo.js`,
-    ticket: `${ICONS_PATH}${transparentStr}/Ticket.js`,
-    visa: `${ICONS_PATH}${transparentStr}/Visa.js`,
-    visa_electron: `${ICONS_PATH}${transparentStr}/VisaElectron.js`,
-    western: `${ICONS_PATH}${transparentStr}/Western.js`,
-    wirecard: `${ICONS_PATH}${transparentStr}/Wirecard.js`,
-  };
-  return FLAGS_SVGS_URLS[key];
-}
+export const getSvg = (key, transparent = false) => {
+  const path = "./Icons";
 
-export function getBankSvgUrls(key, transparent = false) {
-  const transparentStr = transparent ? "_transparent" : "";
-  const BANKS_SVGS_URLS = {
-    boleto: `${ICONS_PATH}/Boleto.js`,
-    bb: `${ICONS_PATH}/Bb.js`,
-    bradesco: `${ICONS_PATH}/Bradesco.js`,
-    caixa: `${ICONS_PATH}/Caixa.js`,
-    hsbc: `${ICONS_PATH}/Hsbc.js`,
-    itau: `${ICONS_PATH}/Itau.js`,
-    santander: `${ICONS_PATH}/Santander.js`,
-  };
+  if (availableSvg.includes(key)) {
+    let icon = (key[0].toUpperCase() + key.slice(1)).replace();
+    icon;
+    const fixedKey = key
+      .replace(/^([a-z])/, (m, fc) => {
+        return fc.toUpperCase();
+      })
+      .replace(/_[a-z]{1}/, (m) => m.split("")[1].toUpperCase());
 
-  return BANKS_SVGS_URLS[key];
-}
+    return `${path}/${fixedKey}.js`;
+  }
+
+  return `${path}/Generic.js`;
+};
 
 export function getFacilitatorSvgUrl(key, transparent = false) {
   const transparentStr = transparent ? "/transparent" : "";

@@ -16,62 +16,30 @@
   Object.defineProperty(_exports, "__esModule", {
     value: true
   });
-  _exports.getFlagSvgUrl = getFlagSvgUrl;
-  _exports.getBankSvgUrls = getBankSvgUrls;
   _exports.getFacilitatorSvgUrl = getFacilitatorSvgUrl;
   _exports.getUnknownSvg = getUnknownSvg;
-  var ICONS_PATH = "./Icons"; // const ICONS_PATH = 'https://s3-sa-east-1.amazonaws.com/azpay-checkout/payment-methods';
+  _exports.getSvg = void 0;
+  var availableSvg = [// Cards
+  "adyen", "amex", "aura", "bin", "boleto", "cirrus", "diners", "direct_debit", "discover", "ebay", "elo", "eway", "hipercard", "jcb", "maestro", "mastercard", "sage", "shopify", "skrill", "skrill_moneybookers", "sodexo", "solo", "ticket", "visa", "visa_electron", "western", "wirecard", // Bank
+  "bb", "bradesco", "caixa", "hsbc", "itau", "santander"];
 
-  function getFlagSvgUrl(key) {
+  var getSvg = function getSvg(key) {
     var transparent = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : false;
-    var transparentStr = transparent ? "_transparent" : "";
-    var FLAGS_SVGS_URLS = {
-      adyen: "".concat(ICONS_PATH).concat(transparentStr, "/Adyen.js"),
-      amex: "".concat(ICONS_PATH).concat(transparentStr, "/Amex.js"),
-      aura: "".concat(ICONS_PATH).concat(transparentStr, "/Aura.js"),
-      bin: "".concat(ICONS_PATH).concat(transparentStr, "/Bin.js"),
-      boleto: "".concat(ICONS_PATH).concat(transparentStr, "/Boleto.js"),
-      cirrus: "".concat(ICONS_PATH).concat(transparentStr, "/Cirrus.js"),
-      credit_card: "".concat(ICONS_PATH).concat(transparentStr, "/Credit-card.js"),
-      diners: "".concat(ICONS_PATH).concat(transparentStr, "/Diners.js"),
-      direct_debit: "".concat(ICONS_PATH).concat(transparentStr, "/DirectDebit.js"),
-      discover: "".concat(ICONS_PATH).concat(transparentStr, "/Discover.js"),
-      ebay: "".concat(ICONS_PATH).concat(transparentStr, "/Ebay.js"),
-      elo: "".concat(ICONS_PATH).concat(transparentStr, "/Elo.js"),
-      eway: "".concat(ICONS_PATH).concat(transparentStr, "/Eway.js"),
-      hipercard: "".concat(ICONS_PATH).concat(transparentStr, "/Hipercard.js"),
-      jcb: "".concat(ICONS_PATH).concat(transparentStr, "/Jcb.js"),
-      maestro: "".concat(ICONS_PATH).concat(transparentStr, "/Maestro.js"),
-      mastercard: "".concat(ICONS_PATH).concat(transparentStr, "/Mastercard.js"),
-      sage: "".concat(ICONS_PATH).concat(transparentStr, "/Sage.js"),
-      shopify: "".concat(ICONS_PATH).concat(transparentStr, "/Shopify.js"),
-      skrill: "".concat(ICONS_PATH).concat(transparentStr, "/Skrill.js"),
-      skrill_moneybookers: "".concat(ICONS_PATH).concat(transparentStr, "/SkrillMoneybookers.js"),
-      sodexo: "".concat(ICONS_PATH).concat(transparentStr, "/Sodexo.js"),
-      solo: "".concat(ICONS_PATH).concat(transparentStr, "/Solo.js"),
-      ticket: "".concat(ICONS_PATH).concat(transparentStr, "/Ticket.js"),
-      visa: "".concat(ICONS_PATH).concat(transparentStr, "/Visa.js"),
-      visa_electron: "".concat(ICONS_PATH).concat(transparentStr, "/VisaElectron.js"),
-      western: "".concat(ICONS_PATH).concat(transparentStr, "/Western.js"),
-      wirecard: "".concat(ICONS_PATH).concat(transparentStr, "/Wirecard.js")
-    };
-    return FLAGS_SVGS_URLS[key];
-  }
+    var path = "./Icons";
 
-  function getBankSvgUrls(key) {
-    var transparent = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : false;
-    var transparentStr = transparent ? "_transparent" : "";
-    var BANKS_SVGS_URLS = {
-      boleto: "".concat(ICONS_PATH, "/Boleto.js"),
-      bb: "".concat(ICONS_PATH, "/Bb.js"),
-      bradesco: "".concat(ICONS_PATH, "/Bradesco.js"),
-      caixa: "".concat(ICONS_PATH, "/Caixa.js"),
-      hsbc: "".concat(ICONS_PATH, "/Hsbc.js"),
-      itau: "".concat(ICONS_PATH, "/Itau.js"),
-      santander: "".concat(ICONS_PATH, "/Santander.js")
-    };
-    return BANKS_SVGS_URLS[key];
-  }
+    if (availableSvg.includes(key)) {
+      var icon = (key[0].toUpperCase() + key.slice(1)).replace();
+      icon;
+      var fixedKey = key.replace(/^([a-z])/, (m, fc) => {
+        return fc.toUpperCase();
+      }).replace(/_[a-z]{1}/, m => m.split("")[1].toUpperCase());
+      return "".concat(path, "/").concat(fixedKey, ".js");
+    }
+
+    return "".concat(path, "/Generic.js");
+  };
+
+  _exports.getSvg = getSvg;
 
   function getFacilitatorSvgUrl(key) {
     var transparent = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : false;
