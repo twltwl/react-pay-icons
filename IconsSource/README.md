@@ -3,7 +3,7 @@
 ### 1. Convert
 
 ```
-npx @svgr/cli --icon --replace-attr-values "#000=currentColor" --no-dimensions -d imgout img
+npx @svgr/cli --template template.js --icon --replace-attr-values "#000=currentColor" --no-dimensions -d imgout img
 ```
 
 ### 2. Clenup SVG files

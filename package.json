@@ -2,13 +2,13 @@
   "name": "react-payment-icons-inline",
   "version": "1.0.21",
   "description": "Inline SVG Payment Icons for React applications",
-  "main": "./es/index.js",
+  "main": "./lib/index.js",
   "scripts": {
     "test": "jest",
     "test:watch": "yarn test -- --watch",
     "dev": "webpack-dev-server --config ./webpack.dev.js --mode development",
     "lint": "eslint",
-    "build": "rimraf ./es && cross-env BABEL_ENV=es babel ./src --out-dir ./es"
+    "build": "rimraf ./lib && BABEL_ENV=es babel ./src/Icons --out-dir ./lib"
   },
   "files": [
     "/es"
@@ -20,7 +20,7 @@
     "react": "^16.11.0",
     "react-dom": "^16.11.0"
   },
-  "repository": "https://github.com/paveli/react-payment-icons-inline",
+  "repository": "https://github.com/twltwl/react-payment-icons-inline",
   "engines": {
     "node": ">=8.0.0"
   },
