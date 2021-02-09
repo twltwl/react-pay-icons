@@ -6,7 +6,7 @@
   "scripts": {
     "test": "jest",
     "test:watch": "yarn test -- --watch",
-    "start": "webpack-dev-server --config ./webpack.dev.js --mode development",
+    "dev": "webpack-dev-server --config ./webpack.dev.js --mode development",
     "lint": "eslint",
     "build": "rimraf ./es && cross-env BABEL_ENV=es babel ./src --out-dir ./es"
   },
