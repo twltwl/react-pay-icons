@@ -1,29 +1,36 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import PaymentIcon from "../es/";
+import PaymentIcon from "./index";
 
 const element = document.getElementById("root");
 
+const styleProps = {
+	width: 100,
+	margin: 10
+}
+
 ReactDOM.render(
-	<div style={{ backgroundColor: "#f1f1f1" }}>
-		<PaymentIcon style={{ width: 100 }} icon="visa" />
-		<PaymentIcon style={{ width: 100 }} icon="mastercard" />
-		<PaymentIcon style={{ width: 100 }} icon="discover" />
-		<PaymentIcon style={{ width: 100 }} icon="boleto" />
-		<PaymentIcon style={{ width: 100 }} icon="paypal" />
-		<PaymentIcon style={{ width: 100 }} icon="shopify" />
-		<PaymentIcon style={{ width: 100 }} icon="applepay" />
-		<PaymentIcon style={{ width: 100 }} icon="googlepay" />
-		<PaymentIcon style={{ width: 100 }} icon="ebay" />
-		<PaymentIcon style={{ width: 100 }} icon="aura" />
-		<PaymentIcon style={{ width: 100 }} icon="elo" />
-		<PaymentIcon style={{ width: 100 }} icon="cielo" />
-		<PaymentIcon style={{ width: 100 }} icon="bb" />
-		<PaymentIcon style={{ width: 100 }} icon="santander" />
-		<PaymentIcon style={{ width: 100 }} icon="rede" />
-		<PaymentIcon style={{ width: 100 }} icon="itau" />
-		<PaymentIcon style={{ width: 100 }} icon="generic" />
-		<PaymentIcon style={{ width: 100 }} icon="worldpay" />
+	<div style={{ backgroundColor: "#f1f1f1", display: 'flex', flexWrap: 'wrap' }}>
+		<PaymentIcon style={styleProps} icon="visa" />
+		<PaymentIcon style={styleProps} icon="mastercard" />
+		<PaymentIcon style={styleProps} icon="discover" />
+		<PaymentIcon style={styleProps} icon="boleto" />
+		<PaymentIcon style={styleProps} icon="paypal" />
+		<PaymentIcon style={styleProps} icon="shopify" />
+		<PaymentIcon style={styleProps} icon="applepay" />
+		<PaymentIcon style={styleProps} icon="googlepay" />
+		<PaymentIcon style={styleProps} icon="ebay" />
+		<PaymentIcon style={styleProps} icon="aura" />
+		<PaymentIcon style={styleProps} icon="elo" />
+		<PaymentIcon style={styleProps} icon="cielo" />
+		<PaymentIcon style={styleProps} icon="bb" />
+		<PaymentIcon style={styleProps} icon="santander" />
+		<PaymentIcon style={styleProps} icon="rede" />
+		<PaymentIcon style={styleProps} icon="itau" />
+		<PaymentIcon style={styleProps} icon="generic" />
+		<PaymentIcon style={styleProps} icon="worldpay" />
+		<PaymentIcon style={styleProps} icon="direct_debit" />
+		<PaymentIcon style={styleProps} icon="skrill_moneybookers" />
 	</div>,
 	element
 );

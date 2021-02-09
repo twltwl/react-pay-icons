@@ -10,7 +10,7 @@
     factory(mod.exports);
     global.remoteImages = mod.exports;
   }
-})(this, function (_exports) {
+})(typeof globalThis !== "undefined" ? globalThis : typeof self !== "undefined" ? self : this, function (_exports) {
   "use strict";
 
   Object.defineProperty(_exports, "__esModule", {
@@ -34,7 +34,7 @@
       cirrus: "".concat(ICONS_PATH).concat(transparentStr, "/Cirrus.js"),
       credit_card: "".concat(ICONS_PATH).concat(transparentStr, "/Credit-card.js"),
       diners: "".concat(ICONS_PATH).concat(transparentStr, "/Diners.js"),
-      direct_debit: "".concat(ICONS_PATH).concat(transparentStr, "/Direct_debit.js"),
+      direct_debit: "".concat(ICONS_PATH).concat(transparentStr, "/DirectDebit.js"),
       discover: "".concat(ICONS_PATH).concat(transparentStr, "/Discover.js"),
       ebay: "".concat(ICONS_PATH).concat(transparentStr, "/Ebay.js"),
       elo: "".concat(ICONS_PATH).concat(transparentStr, "/Elo.js"),
@@ -46,12 +46,12 @@
       sage: "".concat(ICONS_PATH).concat(transparentStr, "/Sage.js"),
       shopify: "".concat(ICONS_PATH).concat(transparentStr, "/Shopify.js"),
       skrill: "".concat(ICONS_PATH).concat(transparentStr, "/Skrill.js"),
-      skrill_moneybookers: "".concat(ICONS_PATH).concat(transparentStr, "/Skrill_moneybookers.js"),
+      skrill_moneybookers: "".concat(ICONS_PATH).concat(transparentStr, "/SkrillMoneybookers.js"),
       sodexo: "".concat(ICONS_PATH).concat(transparentStr, "/Sodexo.js"),
       solo: "".concat(ICONS_PATH).concat(transparentStr, "/Solo.js"),
       ticket: "".concat(ICONS_PATH).concat(transparentStr, "/Ticket.js"),
       visa: "".concat(ICONS_PATH).concat(transparentStr, "/Visa.js"),
-      visa_electron: "".concat(ICONS_PATH).concat(transparentStr, "/Visa_electron.js"),
+      visa_electron: "".concat(ICONS_PATH).concat(transparentStr, "/VisaElectron.js"),
       western: "".concat(ICONS_PATH).concat(transparentStr, "/Western.js"),
       wirecard: "".concat(ICONS_PATH).concat(transparentStr, "/Wirecard.js")
     };

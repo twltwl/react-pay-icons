@@ -10,7 +10,7 @@
     factory(mod.exports, global.react);
     global.Applepay = mod.exports;
   }
-})(this, function (_exports, _react) {
+})(typeof globalThis !== "undefined" ? globalThis : typeof self !== "undefined" ? self : this, function (_exports, _react) {
   "use strict";
 
   Object.defineProperty(_exports, "__esModule", {
@@ -24,9 +24,9 @@
   function _extends() { _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
 
   var SvgApplepay = function SvgApplepay(props) {
-    return _react["default"].createElement("svg", _extends({
+    return /*#__PURE__*/_react["default"].createElement("svg", _extends({
       viewBox: "0 0 73 30"
-    }, props), _react["default"].createElement("image", {
+    }, props), /*#__PURE__*/_react["default"].createElement("image", {
       x: 14,
       y: 35,
       width: 73,
