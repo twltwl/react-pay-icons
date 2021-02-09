@@ -13,12 +13,11 @@
 })(typeof globalThis !== "undefined" ? globalThis : typeof self !== "undefined" ? self : this, function (_react, _reactDom, _index) {
   "use strict";
 
+  var _interopRequireDefault = require("@babel/runtime/helpers/interopRequireDefault");
+
   _react = _interopRequireDefault(_react);
   _reactDom = _interopRequireDefault(_reactDom);
   _index = _interopRequireDefault(_index);
-
-  function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
   var element = document.getElementById("root");
   var styleProps = {
     width: 100,
