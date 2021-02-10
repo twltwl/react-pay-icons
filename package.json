@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "webpack-dev-server --config ./webpack.dev.js --mode development",
     "icons": "svgr --config-file ./.svgrc.js -d ./src/Icons ./IconsSource",
-    "build": "rimraf ./lib && BABEL_ENV=es babel ./src/Icons --out-dir ./lib"
+    "build": "npm run icons && rimraf ./lib && BABEL_ENV=es babel ./src/Icons --out-dir ./lib"
   },
   "files": [
     "/lib"
