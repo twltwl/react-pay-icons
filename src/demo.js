@@ -25,7 +25,7 @@ ReactDOM.render(
       ))}
     </div>
 
-    <h2>Transparent Icons</h2>
+    <h2>Transparent Iconz</h2>
     <div style={flexProps}>
       {Object.values(TransparentIcons).map((Icon) => (
         <Icon style={styleProps} />

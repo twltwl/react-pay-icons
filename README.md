@@ -11,9 +11,9 @@ npm i XXX
 Using this component on your project.
 
 ```jsx
-import Visa from "???/icons/Visa";
+import { Visa } from "payment-icons-react";
 // Alt
-import { Visa } from "???";
+import Visa from "payment-icons-react/lib/Visa";
 
 <Visa style={{ margin: 10, width: 100 }} />;
 ```
@@ -21,7 +21,7 @@ import { Visa } from "???";
 Icons with transparent BG
 
 ```jsx
-import Visa from "???/icons/transparent/Visa";
+import { Visa } from "payment-icons-react/lib/transparent";
 
 <Visa style={{ margin: 10, width: 100 }} />;
 ```
