@@ -9,7 +9,7 @@ const SvgElo = (props) =>
     },
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 126 79" {...props}>
       <g fill="none" fillRule="evenodd">
-        <rect fill="currentColor" width={125.43} height={78.39} rx={4.18} />
+        <rect fill="#000" width={125.43} height={78.39} rx={4.18} />
         <path
           d="M24.838 27.39a11.89 11.89 0 013.856-.637c5.888 0 10.804 4.29 11.928 9.995l8.346-1.746c-1.913-9.69-10.264-16.985-20.274-16.985a20.08 20.08 0 00-6.557 1.092l2.7 8.282z"
           fill="#FFCB05"

@@ -8,10 +8,11 @@
     "test:watch": "yarn test -- --watch",
     "dev": "webpack-dev-server --config ./webpack.dev.js --mode development",
     "lint": "eslint",
+    "icons": "svgr --config-file ./.svgrc.js -d ./src/Icons ./IconsSource",
     "build": "rimraf ./lib && BABEL_ENV=es babel ./src/Icons --out-dir ./lib"
   },
   "files": [
-    "/es"
+    "/lib"
   ],
   "author": "Tommy Ljungberg",
   "license": "MIT",
@@ -30,6 +31,7 @@
     "@babel/plugin-transform-modules-umd": "^7.12.13",
     "@babel/preset-env": "^7.12.13",
     "@babel/preset-react": "^7.12.13",
+    "@svgr/cli": "^5.5.0",
     "babel-eslint": "^10.0.3",
     "babel-loader": "^8.2.2",
     "babel-plugin-inline-react-svg": "^1.1.2",

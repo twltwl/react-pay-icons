@@ -19,7 +19,7 @@ import Visa from "???/icons/Visa";
 Icons with transparent BG
 
 ```jsx
-import Visa from "???/icons/transparent/Visa";
+import Visa from "???/icons/transparent/sVisa";
 
 <Visa style={{ margin: 10, width: 100 }} />;
 ```
@@ -94,3 +94,18 @@ Below the list of the available props:
 - hsbc
 - itau
 - santander
+
+## Development
+
+### Adding a new icon
+
+Place svg file in ./IconsSource and follow build step
+
+### Building the package icons
+
+```sh
+# Create React components from SVGs
+npm run icons
+# Build package
+npm run build
+```

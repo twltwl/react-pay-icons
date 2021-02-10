@@ -1,10 +1,10 @@
+const path = require("path");
+
 function template(
   { template },
   opts,
   { imports, componentName, props, jsx, exports }
 ) {
-  console.log(props);
-
   return template.ast`
     ${imports}
     const ${componentName} = (${props}) => 
@@ -12,4 +12,11 @@ function template(
     ${exports}
   `;
 }
-module.exports = template;
+
+module.exports = {
+  icon: true,
+  template,
+  replaceAttrValues: { old: "new" },
+  dimensions: false,
+  outDir: path.resolve(__dirname, "src", "Icons"),
+};
