@@ -1,9 +1,7 @@
 {
 	"plugins": [
-		"@babel/plugin-syntax-dynamic-import",
 		"inline-react-svg",
 		"@babel/plugin-transform-modules-umd",
-		"@babel/plugin-transform-runtime"
 	],
 	"presets": [
 		"@babel/preset-env",

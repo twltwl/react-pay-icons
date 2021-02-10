@@ -12,6 +12,8 @@ Using this component on your project.
 
 ```jsx
 import Visa from "???/icons/Visa";
+// Alt
+import { Visa } from "???";
 
 <Visa style={{ margin: 10, width: 100 }} />;
 ```
@@ -19,7 +21,7 @@ import Visa from "???/icons/Visa";
 Icons with transparent BG
 
 ```jsx
-import Visa from "???/icons/transparent/sVisa";
+import Visa from "???/icons/transparent/Visa";
 
 <Visa style={{ margin: 10, width: 100 }} />;
 ```
@@ -28,11 +30,11 @@ import Visa from "???/icons/transparent/sVisa";
 
 Below the list of the available props:
 
-| Name      | Type   | Default | Description                                       |
-| --------- | ------ | ------- | ------------------------------------------------- |
-| icon      | String |         | The payment icon that you wanna render            |
-| style     | Object |         | CSS style object                                  |
-| className | String |         | HTML class for you to customize with your own CSS |
+| Name      | Type   | Default | Description                                          |
+| --------- | ------ | ------- | ---------------------------------------------------- |
+| style     | Object |         | CSS style object                                     |
+| className | String |         | HTML class for you to customize with your own CSS    |
+| ...prop   | \*     |         | Any other prop will be propagated on the SVG element |
 
 ## Payment Icons
 
@@ -108,4 +110,11 @@ Place svg file in ./IconsSource and follow build step
 npm run icons
 # Build package
 npm run build
+```
+
+### Check icons preview
+
+```sh
+npm run dev
+# open localhost:8080
 ```
