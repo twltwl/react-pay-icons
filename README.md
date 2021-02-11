@@ -57,6 +57,7 @@ Below the list of the available props:
 - Diners
 - DirectDebit
 - Discover
+- Dotpay
 - Ebay
 - Elavon
 - ElavonTransparent
@@ -83,6 +84,7 @@ Below the list of the available props:
 - Sage
 - Santander
 - SantanderTransparent
+- Sepa
 - Shopify
 - Skrill
 - SkrillMoneybookers

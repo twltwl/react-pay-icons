@@ -1,7 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import * as Icons from "../lib/";
-import * as TransparentIcons from "../lib/transparent";
 
 const element = document.getElementById("root");
 
@@ -21,13 +20,6 @@ ReactDOM.render(
     <h2>Icons</h2>
     <div style={flexProps}>
       {Object.values(Icons).map((Icon) => (
-        <Icon style={styleProps} />
-      ))}
-    </div>
-
-    <h2>Transparent Iconz</h2>
-    <div style={flexProps}>
-      {Object.values(TransparentIcons).map((Icon) => (
         <Icon style={styleProps} />
       ))}
     </div>
