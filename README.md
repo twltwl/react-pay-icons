@@ -11,19 +11,18 @@ npm i XXX
 Using this component on your project.
 
 ```jsx
-import { Visa } from "payment-icons-react";
-// Alt
-import Visa from "payment-icons-react/lib/Visa";
+import { Visa } from "react-pay-icons";
 
 <Visa style={{ margin: 10, width: 100 }} />;
 ```
 
-Icons with transparent BG
+Some icons are available with transparent BG
 
 ```jsx
-import { Visa } from "payment-icons-react/lib/transparent";
+import { Amazon, AmazonTransparent } from "react-pay-icons";
 
-<Visa style={{ margin: 10, width: 100 }} />;
+<Amazon style={{ margin: 10, width: 100 }} />;
+<AmazonTransparent style={{ margin: 10, width: 100 }} />;
 ```
 
 ## Props
@@ -38,64 +37,65 @@ Below the list of the available props:
 
 ## Payment Icons
 
-### Supported Brands
-
-- aura
-- amex
-- cirrus
-- diners
-- direct_debit
-- discover
-- ebay
-- elo
-- eway
-- hipercard
-- jcb
-- maestro
-- mastercard
-- paypal
-- sage
-- shopify
-- skrill_moneybookers
-- skrill
-- sodexo
-- solo
-- ticket
-- visa_electron
-- visa
-- wallet
-- western
-- wirecard
-
-### Supported Payment Facilitators
-
-- adyen
-- amazon
-- applepay
-- cielo
-- ebanx
-- elavon
-- firstdata
-- iugu
-- global
-- googlepay
-- mercadopago
-- pagarme
-- pagseguro
-- rede
-- stone
-- stelo
-- yapay
-- worldpay
-
-### Supported Banks
-
-- bb
-- bradesco
-- caixa
-- hsbc
-- itau
-- santander
+- Amazon
+- AmazonTransparent
+- Amex
+- Applepay
+- Aura
+- Bb
+- BbTransparent
+- Bitcoin
+- Boleto
+- BoletoTransparent
+- Bradesco
+- BradescoTransparent
+- Caixa
+- CaixaTransparent
+- Cielo
+- CieloTransparent
+- Cirrus
+- Diners
+- DirectDebit
+- Discover
+- Ebay
+- Elavon
+- ElavonTransparent
+- Elo
+- Eway
+- Generic
+- GenericTransparent
+- Global
+- GlobalTransparent
+- Googlepay
+- Hsbc
+- HsbcTransparent
+- Itau
+- ItauTransparent
+- Jcb
+- Maestro
+- Mastercard
+- Pagseguro
+- PagseguroTransparent
+- Paypal
+- PaypalTransparent
+- Rede
+- RedeTransparent
+- Sage
+- Santander
+- SantanderTransparent
+- Shopify
+- Skrill
+- SkrillMoneybookers
+- Solo
+- Stone
+- StoneTransparent
+- Visa
+- VisaElectron
+- Wallet
+- WalletTransparent
+- Western
+- Worldpay
+- WorldpayTransparent
 
 ## Development
 

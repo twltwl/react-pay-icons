@@ -1,5 +1,5 @@
 {
-  "name": "payment-icons-react",
+  "name": "react-pay-icons",
   "version": "1.0.0",
   "description": "Payment Icons for React applications",
   "main": "./lib/index.js",
@@ -17,7 +17,7 @@
     "react": "^16.11.0",
     "react-dom": "^16.11.0"
   },
-  "repository": "https://github.com/twltwl/payment-icons-react",
+  "repository": "https://github.com/twltwl/react-pay-icons",
   "engines": {
     "node": ">=8.0.0"
   },
