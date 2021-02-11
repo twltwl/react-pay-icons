@@ -5,7 +5,7 @@ Library to get the most popular payment icons
 ## How to use
 
 ```sh
-npm i XXX
+npm i react-pay-icons
 ```
 
 Using this component on your project.
