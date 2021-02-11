@@ -19,9 +19,10 @@ ReactDOM.render(
   <div style={{ backgroundColor: "#f1f1f1" }}>
     <h2>Icons</h2>
     <div style={flexProps}>
-      {Object.values(Icons).map((Icon) => (
-        <Icon style={styleProps} />
-      ))}
+      {Object.keys(Icons).map((key) => {
+        const Icon = Icons[key];
+        return <Icon data-name={key} style={styleProps} />;
+      })}
     </div>
   </div>,
   element
