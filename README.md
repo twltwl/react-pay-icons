@@ -51,6 +51,7 @@ Below the list of the available props:
 - BradescoTransparent
 - Caixa
 - CaixaTransparent
+- CartesBancaires
 - Cielo
 - CieloTransparent
 - Cirrus
@@ -68,6 +69,7 @@ Below the list of the available props:
 - Global
 - GlobalTransparent
 - Googlepay
+- Hiper
 - Hsbc
 - HsbcTransparent
 - Itau
@@ -91,6 +93,7 @@ Below the list of the available props:
 - Solo
 - Stone
 - StoneTransparent
+- UnionPay
 - Visa
 - VisaElectron
 - Wallet
