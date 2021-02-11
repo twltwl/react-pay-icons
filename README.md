@@ -1,6 +1,6 @@
-# React Payment Icons Inline
+# React Pay Icons
 
-Library to get the most popular payment icons brands.
+Library to get the most popular payment icons
 
 ## How to use
 
