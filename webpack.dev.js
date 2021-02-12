@@ -13,12 +13,12 @@ module.exports = {
   },
   entry: ["./src/demo"],
   output: {
-    path: `${__dirname}/dist`,
+    path: `${__dirname}/docs`,
     publicPath: "/",
     filename: "bundle.js",
   },
   devServer: {
-    contentBase: "./dist",
+    contentBase: "./docs",
     writeToDisk: true,
   },
   devtool: "cheap-module-eval-source-map",
