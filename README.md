@@ -2,6 +2,9 @@
 
 Library to get the most popular payment icons
 
+Icons live demo:
+https://twltwl.github.io/react-pay-icons/
+
 ## How to use
 
 ```sh
