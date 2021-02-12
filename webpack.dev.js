@@ -19,6 +19,7 @@ module.exports = {
   },
   devServer: {
     contentBase: "./dist",
+    writeToDisk: true,
   },
   devtool: "cheap-module-eval-source-map",
 };
