@@ -17,7 +17,6 @@ const flexProps = {
 
 ReactDOM.render(
   <div style={{ backgroundColor: "#f1f1f1" }}>
-    <h2>Icons</h2>
     <div style={flexProps}>
       {Object.keys(Icons).map((key) => {
         const Icon = Icons[key];
