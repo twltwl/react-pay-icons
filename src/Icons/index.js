@@ -1,4 +1,3 @@
-export { default as Svg7Eleven } from './7Eleven'
 export { default as Ach } from './Ach'
 export { default as Affirm } from './Affirm'
 export { default as Afterpay } from './Afterpay'
