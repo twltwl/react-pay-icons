@@ -1,0 +1,88 @@
+import * as React from "react";
+
+const SvgIcx = (props) =>
+  React.createElement(
+    "div",
+    {
+      className: props.className,
+      style: props.style,
+    },
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      xmlnsXlink="http://www.w3.org/1999/xlink"
+      viewBox="0 0 32 32"
+      {...props}
+    >
+      <defs>
+        <filter
+          id="icx_svg__a"
+          width="111.7%"
+          height="111.7%"
+          x="-5.8%"
+          y="-4.2%"
+          filterUnits="objectBoundingBox"
+        >
+          <feOffset dy={0.5} in="SourceAlpha" result="shadowOffsetOuter1" />
+          <feGaussianBlur
+            in="shadowOffsetOuter1"
+            result="shadowBlurOuter1"
+            stdDeviation={0.5}
+          />
+          <feComposite
+            in="shadowBlurOuter1"
+            in2="SourceAlpha"
+            operator="out"
+            result="shadowBlurOuter1"
+          />
+          <feColorMatrix
+            in="shadowBlurOuter1"
+            values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.199473505 0"
+          />
+        </filter>
+        <filter
+          id="icx_svg__d"
+          width="117.5%"
+          height="117.5%"
+          x="-8.8%"
+          y="-6.2%"
+          filterUnits="objectBoundingBox"
+        >
+          <feOffset dy={0.5} in="SourceAlpha" result="shadowOffsetOuter1" />
+          <feGaussianBlur
+            in="shadowOffsetOuter1"
+            result="shadowBlurOuter1"
+            stdDeviation={0.5}
+          />
+          <feColorMatrix
+            in="shadowBlurOuter1"
+            values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.204257246 0"
+          />
+        </filter>
+        <linearGradient id="icx_svg__c" x1="50%" x2="50%" y1="0%" y2="100%">
+          <stop offset="0%" stopColor="#FFF" stopOpacity={0.5} />
+          <stop offset="100%" stopOpacity={0.5} />
+        </linearGradient>
+        <circle id="icx_svg__b" cx={16} cy={15} r={15} />
+        <path
+          id="icx_svg__e"
+          d="M11.296 21.472l2.164-2.164a5 5 0 006.848-6.848l2.164-2.164a8 8 0 01-11.176 11.176zm-1.768-1.768A8 8 0 0120.704 8.528l-2.164 2.164a5 5 0 00-6.848 6.848l-2.164 2.164zM24 9a2 2 0 110-4 2 2 0 010 4zM8 25a2 2 0 110-4 2 2 0 010 4z"
+        />
+      </defs>
+      <g fill="none" fillRule="evenodd">
+        <use fill="#000" filter="url(#icx_svg__a)" xlinkHref="#icx_svg__b" />
+        <use fill="#1FC5C9" xlinkHref="#icx_svg__b" />
+        <use
+          fill="url(#icx_svg__c)"
+          style={{
+            mixBlendMode: "soft-light",
+          }}
+          xlinkHref="#icx_svg__b"
+        />
+        <circle cx={16} cy={15} r={14.5} stroke="#000" strokeOpacity={0.097} />
+        <use fill="#000" filter="url(#icx_svg__d)" xlinkHref="#icx_svg__e" />
+        <use fill="#FFF" xlinkHref="#icx_svg__e" />
+      </g>
+    </svg>
+  );
+
+export default SvgIcx;

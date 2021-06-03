@@ -19,14 +19,15 @@ import { Visa } from "react-pay-icons";
 <Visa style={{ margin: 10, width: 100 }} />;
 ```
 
-Some icons are available with transparent BG
+## Version 2 - Added icons for cryptocurrencies
 
 ```jsx
-import { Amazon, AmazonTransparent } from "react-pay-icons";
+import { Btc } from "react-pay-icons/crypto";
 
-<Amazon style={{ margin: 10, width: 100 }} />;
-<AmazonTransparent style={{ margin: 10, width: 100 }} />;
+<Btc style={{ margin: 10, width: 100 }} />;
 ```
+
+Big thanks to https://github.com/spothq/cryptocurrency-icons
 
 ## Props
 
