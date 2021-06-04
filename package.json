@@ -1,6 +1,6 @@
 {
   "name": "react-pay-icons",
-  "version": "1.0.7",
+  "version": "1.1.0",
   "description": "Payment Icons for React applications",
   "main": "./lib/index.js",
   "scripts": {
