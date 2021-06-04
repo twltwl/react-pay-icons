@@ -22,7 +22,7 @@ import { Visa } from "react-pay-icons";
 ## Version 2 - Added icons for cryptocurrencies
 
 ```jsx
-import { Btc } from "react-pay-icons/crypto";
+import { Btc } from "react-pay-icons/lib/crypto";
 
 <Btc style={{ margin: 10, width: 100 }} />;
 ```
