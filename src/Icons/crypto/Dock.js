@@ -7,71 +7,11 @@ const SvgDock = (props) =>
       className: props.className,
       style: props.style,
     },
-    <svg
-      width={32}
-      height={32}
-      xmlns="http://www.w3.org/2000/svg"
-      xmlnsXlink="http://www.w3.org/1999/xlink"
-      {...props}
-    >
-      <defs>
-        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="dock_svg__c">
-          <stop stopColor="#FFF" stopOpacity={0.5} offset="0%" />
-          <stop stopOpacity={0.5} offset="100%" />
-        </linearGradient>
-        <filter
-          x="-5.8%"
-          y="-4.2%"
-          width="111.7%"
-          height="111.7%"
-          filterUnits="objectBoundingBox"
-          id="dock_svg__a"
-        >
-          <feOffset dy={0.5} in="SourceAlpha" result="shadowOffsetOuter1" />
-          <feGaussianBlur
-            stdDeviation={0.5}
-            in="shadowOffsetOuter1"
-            result="shadowBlurOuter1"
-          />
-          <feComposite
-            in="shadowBlurOuter1"
-            in2="SourceAlpha"
-            operator="out"
-            result="shadowBlurOuter1"
-          />
-          <feColorMatrix
-            values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.199473505 0"
-            in="shadowBlurOuter1"
-          />
-        </filter>
-        <circle id="dock_svg__b" cx={15} cy={15} r={15} />
-      </defs>
+    <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" {...props}>
       <g fill="none">
-        <g transform="translate(1)">
-          <use
-            fill="#000"
-            filter="url(#dock_svg__a)"
-            xlinkHref="#dock_svg__b"
-          />
-          <use fill="#786DBC" xlinkHref="#dock_svg__b" />
-          <use
-            fill="url(#dock_svg__c)"
-            style={{
-              mixBlendMode: "soft-light",
-            }}
-            xlinkHref="#dock_svg__b"
-          />
-          <circle
-            strokeOpacity={0.097}
-            stroke="#000"
-            strokeLinejoin="square"
-            cx={15}
-            cy={15}
-            r={14.5}
-          />
-        </g>
+        <circle cx={16} cy={16} r={16} fill="#786DBC" />
         <path
-          d="M16.815 11.05 15.39 9.62a1.001 1.001 0 0 1 1.383-1.447l.034.034 3.181 3.181a1 1 0 0 1 0 1.415l-3.185 3.182a1 1 0 0 1-1.413-1.414l1.493-1.494A4.983 4.983 0 1 0 21 18.003V7a1 1 0 0 1 2 0v11.137a7 7 0 1 1-6.186-7.091v.004z"
+          d="M15.931 10.771l-1.629-1.633a1.144 1.144 0 011.582-1.654l.038.038 3.636 3.636c.447.447.447 1.17 0 1.617l-3.64 3.636a1.143 1.143 0 01-1.616-1.616l1.707-1.707a5.695 5.695 0 104.705 5.63V6.142a1.143 1.143 0 012.286 0v12.729a8 8 0 11-7.07-8.104l.001.004z"
           fill="#FFF"
         />
       </g>

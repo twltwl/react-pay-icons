@@ -7,67 +7,11 @@ const SvgSib = (props) =>
       className: props.className,
       style: props.style,
     },
-    <svg
-      width={32}
-      height={32}
-      xmlns="http://www.w3.org/2000/svg"
-      xmlnsXlink="http://www.w3.org/1999/xlink"
-      {...props}
-    >
-      <defs>
-        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="sib_svg__c">
-          <stop stopColor="#FFF" stopOpacity={0.5} offset="0%" />
-          <stop stopOpacity={0.5} offset="100%" />
-        </linearGradient>
-        <filter
-          x="-5.8%"
-          y="-4.2%"
-          width="111.7%"
-          height="111.7%"
-          filterUnits="objectBoundingBox"
-          id="sib_svg__a"
-        >
-          <feOffset dy={0.5} in="SourceAlpha" result="shadowOffsetOuter1" />
-          <feGaussianBlur
-            stdDeviation={0.5}
-            in="shadowOffsetOuter1"
-            result="shadowBlurOuter1"
-          />
-          <feComposite
-            in="shadowBlurOuter1"
-            in2="SourceAlpha"
-            operator="out"
-            result="shadowBlurOuter1"
-          />
-          <feColorMatrix
-            values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.199473505 0"
-            in="shadowBlurOuter1"
-          />
-        </filter>
-        <circle id="sib_svg__b" cx={15} cy={15} r={15} />
-      </defs>
+    <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" {...props}>
       <g fill="none">
-        <g transform="translate(1)">
-          <use fill="#000" filter="url(#sib_svg__a)" xlinkHref="#sib_svg__b" />
-          <use fill="#057BC1" xlinkHref="#sib_svg__b" />
-          <use
-            fill="url(#sib_svg__c)"
-            style={{
-              mixBlendMode: "soft-light",
-            }}
-            xlinkHref="#sib_svg__b"
-          />
-          <circle
-            strokeOpacity={0.097}
-            stroke="#000"
-            strokeLinejoin="square"
-            cx={15}
-            cy={15}
-            r={14.5}
-          />
-        </g>
+        <circle cx={16} cy={16} r={16} fill="#057BC1" />
         <path
-          d="M16 4C9.925 4 5 8.925 5 15s4.925 11 11 11 11-4.925 11-11A11 11 0 0 0 16 4zm3.828 15.15h-.448v2.504h-1.502V19.15h-2.29v-.93h2.326v-1.682a5.902 5.902 0 0 1-3.97.644c-.752-.179-1.503-.59-1.897-1.27a4.205 4.205 0 0 1-.536-2.182V9.76h1.52v4.113c.036.894.608 1.789 1.484 2.057a4.577 4.577 0 0 0 3.38-.537c0-1.252-.017-3.13 0-5.634h1.54v8.46h.393v.93z"
+          d="M16 4C9.373 4 4 9.373 4 16s5.373 12 12 12 12-5.373 12-12A12 12 0 0016 4zm4.176 16.527h-.488v2.732h-1.64v-2.732h-2.497v-1.015h2.537v-1.834a6.439 6.439 0 01-4.332.702c-.82-.195-1.639-.643-2.068-1.385a4.587 4.587 0 01-.586-2.38v-4.332h1.659v4.488c.039.975.663 1.951 1.62 2.244a4.991 4.991 0 003.687-.586c0-1.366-.02-3.414 0-6.146h1.678v9.23h.43v1.014z"
           fill="#FFF"
         />
       </g>

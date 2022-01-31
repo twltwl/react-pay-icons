@@ -7,85 +7,25 @@ const SvgNexo = (props) =>
       className: props.className,
       style: props.style,
     },
-    <svg
-      width={32}
-      height={32}
-      xmlns="http://www.w3.org/2000/svg"
-      xmlnsXlink="http://www.w3.org/1999/xlink"
-      {...props}
-    >
-      <defs>
-        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="nexo_svg__c">
-          <stop stopColor="#FFF" offset="0%" />
-          <stop offset="100%" />
-        </linearGradient>
-        <filter
-          x="-5.8%"
-          y="-4.2%"
-          width="111.7%"
-          height="111.7%"
-          filterUnits="objectBoundingBox"
-          id="nexo_svg__a"
-        >
-          <feOffset dy={0.5} in="SourceAlpha" result="shadowOffsetOuter1" />
-          <feGaussianBlur
-            stdDeviation={0.5}
-            in="shadowOffsetOuter1"
-            result="shadowBlurOuter1"
-          />
-          <feComposite
-            in="shadowBlurOuter1"
-            in2="SourceAlpha"
-            operator="out"
-            result="shadowBlurOuter1"
-          />
-          <feColorMatrix
-            values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.199473505 0"
-            in="shadowBlurOuter1"
-          />
-        </filter>
-        <circle id="nexo_svg__b" cx={15} cy={15} r={15} />
-      </defs>
+    <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" {...props}>
       <g fill="none">
-        <g transform="translate(1)">
-          <use
-            fill="#000"
-            filter="url(#nexo_svg__a)"
-            xlinkHref="#nexo_svg__b"
-          />
-          <use fill="#1A4199" xlinkHref="#nexo_svg__b" />
-          <use
-            fill="url(#nexo_svg__c)"
-            style={{
-              mixBlendMode: "soft-light",
-            }}
-            xlinkHref="#nexo_svg__b"
-          />
-          <circle
-            strokeOpacity={0.097}
-            stroke="#000"
-            strokeLinejoin="square"
-            cx={15}
-            cy={15}
-            r={14.5}
-          />
-        </g>
+        <circle cx={16} cy={16} r={16} fill="#1A4199" />
         <g fill="#FFF">
           <path
-            d="m11.16 7.114 9.756 5.628v5.744L6 9.872l4.786-2.758a.382.382 0 0 1 .382 0"
+            d="M10.676 7.125l10.732 6.191v6.319L5 10.159l5.265-3.034a.42.42 0 01.42 0"
             opacity={0.7}
           />
-          <path opacity={0.9} d="m20.916 7-4.97 2.872 4.97 2.87z" />
-          <path d="m20.916 7 4.786 2.76c.123.066.2.194.2.334v11.262l-4.986-2.87V7z" />
+          <path opacity={0.9} d="M21.408 7l-5.467 3.16 5.467 3.156z" />
+          <path d="M21.408 7l5.264 3.036a.42.42 0 01.22.367v12.389l-5.484-3.157V7z" />
           <path
-            d="m25.892 21.356-4.786 2.758a.4.4 0 0 1-.382 0l-9.756-5.628v-5.752l14.924 8.622z"
+            d="M26.881 22.792l-5.264 3.033a.44.44 0 01-.42 0l-10.732-6.19v-6.328l16.416 9.485z"
             opacity={0.9}
           />
           <path
-            d="M6 9.872v11.262c0 .14.077.268.2.334l4.786 2.76V12.734L6 9.872z"
+            d="M5 10.16v12.387a.42.42 0 00.22.368l5.265 3.036V13.307L5 10.16z"
             opacity={0.6}
           />
-          <path opacity={0.7} d="m10.978 24.228 4.968-2.872-4.968-2.87z" />
+          <path opacity={0.7} d="M10.476 25.95l5.465-3.158-5.465-3.157z" />
         </g>
       </g>
     </svg>

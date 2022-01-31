@@ -7,83 +7,14 @@ const SvgGas = (props) =>
       className: props.className,
       style: props.style,
     },
-    <svg
-      xmlns="http://www.w3.org/2000/svg"
-      xmlnsXlink="http://www.w3.org/1999/xlink"
-      width={32}
-      height={32}
-      {...props}
-    >
-      <defs>
-        <filter
-          id="gas_svg__a"
-          width="111.7%"
-          height="111.7%"
-          x="-5.8%"
-          y="-4.2%"
-          filterUnits="objectBoundingBox"
-        >
-          <feOffset dy={0.5} in="SourceAlpha" result="shadowOffsetOuter1" />
-          <feGaussianBlur
-            in="shadowOffsetOuter1"
-            result="shadowBlurOuter1"
-            stdDeviation={0.5}
-          />
-          <feComposite
-            in="shadowBlurOuter1"
-            in2="SourceAlpha"
-            operator="out"
-            result="shadowBlurOuter1"
-          />
-          <feColorMatrix
-            in="shadowBlurOuter1"
-            values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.199473505 0"
-          />
-        </filter>
-        <filter
-          id="gas_svg__d"
-          width="120.6%"
-          height="117.5%"
-          x="-10.3%"
-          y="-6.2%"
-          filterUnits="objectBoundingBox"
-        >
-          <feOffset dy={0.5} in="SourceAlpha" result="shadowOffsetOuter1" />
-          <feGaussianBlur
-            in="shadowOffsetOuter1"
-            result="shadowBlurOuter1"
-            stdDeviation={0.5}
-          />
-          <feColorMatrix
-            in="shadowBlurOuter1"
-            values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.204257246 0"
-          />
-        </filter>
-        <linearGradient id="gas_svg__c" x1="50%" x2="50%" y1="0%" y2="100%">
-          <stop offset="0%" stopColor="#FFF" stopOpacity={0.5} />
-          <stop offset="100%" stopOpacity={0.5} />
-        </linearGradient>
-        <circle id="gas_svg__b" cx={16} cy={15} r={15} />
-        <path
-          id="gas_svg__e"
-          d="m25 21.58-6.99-3.258v-7.22L25 8.623V21.58zM14.823 25 8 21.821V8.958l6.823 3.18V25zm10.01-16.843-.113.04-6.71 2.381-.168.06-2.843 1.008-6.73-3.136 9.573-3.396.084-.03.177-.063.062-.021 6.73 3.136-.063.021z"
-        />
-      </defs>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" {...props}>
       <g fill="none" fillRule="evenodd">
-        <use fill="#000" filter="url(#gas_svg__a)" xlinkHref="#gas_svg__b" />
-        <use fill="#58BF00" xlinkHref="#gas_svg__b" />
-        <use
-          fill="url(#gas_svg__c)"
-          style={{
-            mixBlendMode: "soft-light",
-          }}
-          xlinkHref="#gas_svg__b"
+        <circle cx={16} cy={16} r={16} fill="#58BF00" />
+        <path
+          fill="#FFF"
+          fillRule="nonzero"
+          d="M25 22.58l-6.99-3.258v-7.22L25 9.623V22.58zM14.823 26L8 22.821V9.958l6.823 3.18V26zm10.01-16.843l-.113.04-6.71 2.381-.168.06-2.843 1.008-6.73-3.136 9.573-3.396.084-.03.177-.063.062-.021 6.73 3.136-.063.021z"
         />
-        <circle cx={16} cy={15} r={14.5} stroke="#000" strokeOpacity={0.097} />
-        <g fillRule="nonzero">
-          <use fill="#000" filter="url(#gas_svg__d)" xlinkHref="#gas_svg__e" />
-          <use fill="#FFF" fillRule="evenodd" xlinkHref="#gas_svg__e" />
-        </g>
       </g>
     </svg>
   );

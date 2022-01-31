@@ -26,6 +26,7 @@ const wrapperStyle = {
   padding: "10px",
   margin: "10px",
   width: "150px",
+  background: "#ccc",
 };
 
 const textStyle = {
@@ -54,7 +55,7 @@ ReactDOM.render(
         return (
           <div style={wrapperStyle} key={key}>
             <span style={textStyle}>{key}</span>
-            <Icon data-name={key} style={styleProps} />
+            <Icon data-name={key} width="100" />
           </div>
         );
       })}

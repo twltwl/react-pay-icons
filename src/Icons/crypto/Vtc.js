@@ -7,83 +7,14 @@ const SvgVtc = (props) =>
       className: props.className,
       style: props.style,
     },
-    <svg
-      xmlns="http://www.w3.org/2000/svg"
-      xmlnsXlink="http://www.w3.org/1999/xlink"
-      width={32}
-      height={32}
-      {...props}
-    >
-      <defs>
-        <filter
-          id="vtc_svg__a"
-          width="111.7%"
-          height="111.7%"
-          x="-5.8%"
-          y="-4.2%"
-          filterUnits="objectBoundingBox"
-        >
-          <feOffset dy={0.5} in="SourceAlpha" result="shadowOffsetOuter1" />
-          <feGaussianBlur
-            in="shadowOffsetOuter1"
-            result="shadowBlurOuter1"
-            stdDeviation={0.5}
-          />
-          <feComposite
-            in="shadowBlurOuter1"
-            in2="SourceAlpha"
-            operator="out"
-            result="shadowBlurOuter1"
-          />
-          <feColorMatrix
-            in="shadowBlurOuter1"
-            values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.199473505 0"
-          />
-        </filter>
-        <filter
-          id="vtc_svg__d"
-          width="113.5%"
-          height="115.7%"
-          x="-6.7%"
-          y="-5.6%"
-          filterUnits="objectBoundingBox"
-        >
-          <feOffset dy={0.5} in="SourceAlpha" result="shadowOffsetOuter1" />
-          <feGaussianBlur
-            in="shadowOffsetOuter1"
-            result="shadowBlurOuter1"
-            stdDeviation={0.5}
-          />
-          <feColorMatrix
-            in="shadowBlurOuter1"
-            values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.204257246 0"
-          />
-        </filter>
-        <linearGradient id="vtc_svg__c" x1="50%" x2="50%" y1="0%" y2="100%">
-          <stop offset="0%" stopColor="#FFF" stopOpacity={0.5} />
-          <stop offset="100%" stopOpacity={0.5} />
-        </linearGradient>
-        <circle id="vtc_svg__b" cx={16} cy={15} r={15} />
-        <path
-          id="vtc_svg__e"
-          d="m3.467 15.534 1.829-2.082H11.8l3.996 5.098L26.254 4.063a13.317 13.317 0 0 1 1.743 1.912A13.97 13.97 0 0 1 29.4 8.269L16.561 26.028c-.242.254-.497.382-.765.382-.267 0-.537-.128-.807-.382l-8.12-10.494H3.467z"
-        />
-      </defs>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" {...props}>
       <g fill="none" fillRule="evenodd">
-        <use fill="#000" filter="url(#vtc_svg__a)" xlinkHref="#vtc_svg__b" />
-        <use fill="#048657" xlinkHref="#vtc_svg__b" />
-        <use
-          fill="url(#vtc_svg__c)"
-          style={{
-            mixBlendMode: "soft-light",
-          }}
-          xlinkHref="#vtc_svg__b"
+        <circle cx={16} cy={16} r={16} fill="#048657" />
+        <path
+          fill="#FFF"
+          fillRule="nonzero"
+          d="M2.632 16.57l1.95-2.221h6.938l4.263 5.438L26.938 4.334a14.205 14.205 0 011.86 2.04 15.002 15.002 0 011.496 2.446L16.599 27.763c-.259.272-.531.408-.816.408-.286 0-.573-.136-.862-.408L6.26 16.569H2.632z"
         />
-        <circle cx={16} cy={15} r={14.5} stroke="#000" strokeOpacity={0.097} />
-        <g fillRule="nonzero">
-          <use fill="#000" filter="url(#vtc_svg__d)" xlinkHref="#vtc_svg__e" />
-          <use fill="#FFF" fillRule="evenodd" xlinkHref="#vtc_svg__e" />
-        </g>
       </g>
     </svg>
   );
