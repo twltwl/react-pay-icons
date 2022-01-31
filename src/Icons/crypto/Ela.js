@@ -10,7 +10,8 @@ const SvgEla = (props) =>
     <svg
       xmlns="http://www.w3.org/2000/svg"
       xmlnsXlink="http://www.w3.org/1999/xlink"
-      viewBox="0 0 32 32"
+      width={32}
+      height={32}
       {...props}
     >
       <defs>
@@ -88,20 +89,20 @@ const SvgEla = (props) =>
         >
           <path
             fillOpacity={0.4}
-            d="M5 15.119l5-2.82v5.635L5 15.12zm0-9l5-2.82v5.635L5 6.12z"
+            d="m5 15.119 5-2.82v5.635L5 15.12zm0-9 5-2.82v5.635L5 6.12z"
           />
           <path
             fillOpacity={0.7}
-            d="M20 12.23l-5 2.886V9.43l5 2.8zm0-9l-5 2.886V.43l5 2.8z"
+            d="m20 12.23-5 2.886V9.43l5 2.8zm0-9-5 2.886V.43l5 2.8z"
           />
           <path
             fillOpacity={0.8}
             d="M5 15.116V9.433l5 2.87-5 2.813zm0-9V.433l5 2.87-5 2.813z"
           />
-          <path d="M15 15.116l-5-2.812 5-2.874v5.686zm0-9l-5-2.812L15 .43v5.686z" />
+          <path d="m15 15.116-5-2.812 5-2.874v5.686zm0-9-5-2.812L15 .43v5.686z" />
           <path
             fillOpacity={0.6}
-            d="M15 15.116l-5 2.818v-5.63l5 2.812zm0-9l-5 2.818v-5.63l5 2.812z"
+            d="m15 15.116-5 2.818v-5.63l5 2.812zm0-9-5 2.818v-5.63l5 2.812z"
           />
           <path
             fillOpacity={0.5}

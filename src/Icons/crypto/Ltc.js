@@ -10,7 +10,8 @@ const SvgLtc = (props) =>
     <svg
       xmlns="http://www.w3.org/2000/svg"
       xmlnsXlink="http://www.w3.org/1999/xlink"
-      viewBox="0 0 32 32"
+      width={32}
+      height={32}
       {...props}
     >
       <defs>
@@ -65,7 +66,7 @@ const SvgLtc = (props) =>
         <circle id="ltc_svg__b" cx={16} cy={15} r={15} />
         <path
           id="ltc_svg__e"
-          d="M10.427 18.214L9 18.768l.688-2.759 1.444-.58L13.213 7h5.129l-1.519 6.196 1.41-.571-.68 2.75-1.427.571-.848 3.483H23L22.127 23H9.252z"
+          d="M10.427 18.214 9 18.768l.688-2.759 1.444-.58L13.213 7h5.129l-1.519 6.196 1.41-.571-.68 2.75-1.427.571-.848 3.483H23L22.127 23H9.252z"
         />
       </defs>
       <g fill="none" fillRule="evenodd">

@@ -8,20 +8,21 @@ const SvgMatic = (props) =>
       style: props.style,
     },
     <svg
-      viewBox="0 0 96 96"
+      width={96}
+      height={96}
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
       {...props}
     >
-      <g clipPath="url(#matic_svg__clip0)">
-        <g filter="url(#matic_svg__filter0_d)">
+      <g clipPath="url(#matic_svg__a)">
+        <g filter="url(#matic_svg__b)">
           <path
             d="M48 90c24.853 0 45-20.147 45-45S72.853 0 48 0 3 20.147 3 45s20.147 45 45 45z"
             fill="#2B6DEF"
           />
           <path
             d="M48 90c24.853 0 45-20.147 45-45S72.853 0 48 0 3 20.147 3 45s20.147 45 45 45z"
-            fill="url(#matic_svg__paint0_linear)"
+            fill="url(#matic_svg__c)"
             style={{
               mixBlendMode: "soft-light",
             }}
@@ -38,13 +39,13 @@ const SvgMatic = (props) =>
         <path
           fillRule="evenodd"
           clipRule="evenodd"
-          d="M66.002 24l-8.988 5.182h-.01v10.366l-.033.006L30 24l-8.995 5.183L21 29.18v32.231l8.995 5.186.006-.04v.038L39 61.41V49.926l8.98 5.175.006.012.007-.005 9.012-5.159v11.466l8.958 5.163v.027l.024-.013.015.008.011-.024 8.948-5.154V29.21l.04-.023L66.002 24z"
+          d="m66.002 24-8.988 5.182h-.01v10.366l-.033.006L30 24l-8.995 5.183L21 29.18v32.231l8.995 5.186.006-.04v.038L39 61.41V49.926l8.98 5.175.006.012.007-.005 9.012-5.159v11.466l8.958 5.163v.027l.024-.013.015.008.011-.024 8.948-5.154V29.21l.04-.023L66.002 24z"
           fill="#fff"
         />
       </g>
       <defs>
         <linearGradient
-          id="matic_svg__paint0_linear"
+          id="matic_svg__c"
           x1={3}
           y1={0}
           x2={3}
@@ -54,11 +55,11 @@ const SvgMatic = (props) =>
           <stop stopColor="#fff" stopOpacity={0.5} />
           <stop offset={1} stopOpacity={0.5} />
         </linearGradient>
-        <clipPath id="matic_svg__clip0">
+        <clipPath id="matic_svg__a">
           <path fill="#fff" transform="scale(3)" d="M0 0h32v32H0z" />
         </clipPath>
         <filter
-          id="matic_svg__filter0_d"
+          id="matic_svg__b"
           x={0}
           y={-1.5}
           width={96}

@@ -8,7 +8,8 @@ const SvgGrt = (props) =>
       style: props.style,
     },
     <svg
-      viewBox="0 0 32 32"
+      width={32}
+      height={32}
       xmlns="http://www.w3.org/2000/svg"
       xmlnsXlink="http://www.w3.org/1999/xlink"
       {...props}
@@ -71,7 +72,7 @@ const SvgGrt = (props) =>
         />
         <g filter="url(#grt_svg__d)">
           <path
-            d="M20.707 18.543a1 1 0 010 1.414l-4 4a1 1 0 11-1.414-1.414l4-4a1 1 0 011.414 0zM15 6.25a6 6 0 110 12 6 6 0 010-12zm0 2a4 4 0 100 8 4 4 0 000-8zm7-2a1 1 0 110 2 1 1 0 010-2z"
+            d="M20.707 18.543a1 1 0 0 1 0 1.414l-4 4a1 1 0 1 1-1.414-1.414l4-4a1 1 0 0 1 1.414 0zM15 6.25a6 6 0 1 1 0 12 6 6 0 0 1 0-12zm0 2a4 4 0 1 0 0 8 4 4 0 0 0 0-8zm7-2a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"
             fill="#000"
             fillRule="nonzero"
           />

@@ -10,7 +10,8 @@ const SvgEth = (props) =>
     <svg
       xmlns="http://www.w3.org/2000/svg"
       xmlnsXlink="http://www.w3.org/1999/xlink"
-      viewBox="0 0 32 32"
+      width={32}
+      height={32}
       {...props}
     >
       <defs>
@@ -71,7 +72,7 @@ const SvgEth = (props) =>
         <circle id="eth_svg__b" cx={16} cy={15} r={15} />
         <path
           id="eth_svg__e"
-          d="M16.498 20.968L24 16.616l-7.502 10.379L9 16.615l7.498 4.351zm0-17.968l7.497 12.22-7.497 4.353L9 15.22 16.498 3z"
+          d="M16.498 20.968 24 16.616l-7.502 10.379L9 16.615l7.498 4.351zm0-17.968 7.497 12.22-7.497 4.353L9 15.22 16.498 3z"
         />
       </defs>
       <g fill="none" fillRule="evenodd">
@@ -96,11 +97,11 @@ const SvgEth = (props) =>
         </g>
         <g fill="#FFF" fillRule="nonzero">
           <path fillOpacity={0.602} d="M16.498 3v8.87l7.497 3.35z" />
-          <path d="M16.498 3L9 15.22l7.498-3.35z" />
+          <path d="M16.498 3 9 15.22l7.498-3.35z" />
           <path fillOpacity={0.602} d="M16.498 20.968v6.027L24 16.616z" />
           <path d="M16.498 26.995v-6.028L9 16.616z" />
-          <path fillOpacity={0.2} d="M16.498 19.573l7.497-4.353-7.497-3.348z" />
-          <path fillOpacity={0.602} d="M9 15.22l7.498 4.353v-7.701z" />
+          <path fillOpacity={0.2} d="m16.498 19.573 7.497-4.353-7.497-3.348z" />
+          <path fillOpacity={0.602} d="m9 15.22 7.498 4.353v-7.701z" />
         </g>
       </g>
     </svg>

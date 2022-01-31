@@ -10,7 +10,8 @@ const SvgNeos = (props) =>
     <svg
       xmlns="http://www.w3.org/2000/svg"
       xmlnsXlink="http://www.w3.org/1999/xlink"
-      viewBox="0 0 32 32"
+      width={32}
+      height={32}
       {...props}
     >
       <defs>
@@ -65,7 +66,7 @@ const SvgNeos = (props) =>
         <circle id="neos_svg__b" cx={16} cy={15} r={15} />
         <path
           id="neos_svg__e"
-          d="M10.5 8.358l8.143 4.926v3.097l-5.714-3.433V25H10.5V8.358zm11 13.284l-8.143-4.926V13.62l5.714 3.433V5H21.5v16.642z"
+          d="m10.5 8.358 8.143 4.926v3.097l-5.714-3.433V25H10.5V8.358zm11 13.284-8.143-4.926V13.62l5.714 3.433V5H21.5v16.642z"
         />
       </defs>
       <g fill="none" fillRule="evenodd">

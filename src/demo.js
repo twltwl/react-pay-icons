@@ -25,7 +25,6 @@ const wrapperStyle = {
   flexDirection: "column",
   padding: "10px",
   margin: "10px",
-  backgroundColor: "#f2f7fc",
   width: "150px",
 };
 

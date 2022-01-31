@@ -8,7 +8,8 @@ const SvgLink = (props) =>
       style: props.style,
     },
     <svg
-      viewBox="0 0 32 32"
+      width={32}
+      height={32}
       xmlns="http://www.w3.org/2000/svg"
       xmlnsXlink="http://www.w3.org/1999/xlink"
       {...props}
@@ -64,7 +65,7 @@ const SvgLink = (props) =>
         </linearGradient>
         <circle id="link_svg__b" cx={16} cy={15} r={15} />
         <path
-          d="M16 5l-1.799 1.055L9.3 8.945 7.5 10v10l1.799 1.055 4.947 2.89L16.045 25l1.799-1.055 4.857-2.89L24.5 20V10l-1.799-1.055-4.902-2.89L16 5zm-4.902 12.89v-5.78L16 9.22l4.902 2.89v5.78L16 20.78l-4.902-2.89z"
+          d="m16 5-1.799 1.055L9.3 8.945 7.5 10v10l1.799 1.055 4.947 2.89L16.045 25l1.799-1.055 4.857-2.89L24.5 20V10l-1.799-1.055-4.902-2.89L16 5zm-4.902 12.89v-5.78L16 9.22l4.902 2.89v5.78L16 20.78l-4.902-2.89z"
           id="link_svg__e"
         />
       </defs>

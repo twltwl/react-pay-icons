@@ -10,7 +10,8 @@ const SvgDrgn = (props) =>
     <svg
       xmlns="http://www.w3.org/2000/svg"
       xmlnsXlink="http://www.w3.org/1999/xlink"
-      viewBox="0 0 32 32"
+      width={32}
+      height={32}
       {...props}
     >
       <defs>
@@ -86,7 +87,7 @@ const SvgDrgn = (props) =>
             opacity={0.6}
             d="M.4 15.78h2.818l-.072-7.327L13.64 21.776l-.033-15.732h-2.774l.072 7.401L.404.087z"
           />
-          <path d="M.4 4.953L.416.102l13.183 16.752.055 4.942z" />
+          <path d="M.4 4.953.416.102l13.183 16.752.055 4.942z" />
         </g>
       </g>
     </svg>

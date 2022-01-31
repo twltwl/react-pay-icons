@@ -8,7 +8,8 @@ const SvgElec = (props) =>
       style: props.style,
     },
     <svg
-      viewBox="0 0 32 32"
+      width={32}
+      height={32}
       xmlns="http://www.w3.org/2000/svg"
       xmlnsXlink="http://www.w3.org/1999/xlink"
       {...props}
@@ -70,9 +71,9 @@ const SvgElec = (props) =>
           />
         </g>
         <g fill="#FFF">
-          <path d="M11.53 25.622l11.61-12.195h-7.026z" />
+          <path d="m11.53 25.622 11.61-12.195h-7.026z" />
           <path d="M9 17.081h7.027l7.114-3.654h-7.027z" />
-          <path d="M19.551 4L9 17.081h7.027z" />
+          <path d="M19.551 4 9 17.081h7.027z" />
         </g>
       </g>
     </svg>

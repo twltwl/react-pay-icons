@@ -10,7 +10,8 @@ const SvgZil = (props) =>
     <svg
       xmlns="http://www.w3.org/2000/svg"
       xmlnsXlink="http://www.w3.org/1999/xlink"
-      viewBox="0 0 32 32"
+      width={32}
+      height={32}
       {...props}
     >
       <defs>
@@ -84,11 +85,11 @@ const SvgZil = (props) =>
         <g fill="#FFF" filter="url(#zil_svg__d)" transform="translate(9 5)">
           <path
             fillOpacity={0.304}
-            d="M0 1.281l11.114 5.383 2.845-1.282L2.891 0z"
+            d="m0 1.281 11.114 5.383 2.845-1.282L2.891 0z"
           />
           <path
             fillOpacity={0.646}
-            d="M11.114 6.651l2.845-1.281v2.865l-2.845 1.281V6.651zm0 13.284v-8.937l2.845-1.295v8.951l-2.845 1.281z"
+            d="m11.114 6.651 2.845-1.281v2.865l-2.845 1.281V6.651zm0 13.284v-8.937l2.845-1.295v8.951l-2.845 1.281z"
           />
           <path d="M0 1.284v2.897l7.693 3.737L0 11.728v2.856l11.114 5.373v-2.874l-7.548-3.671 7.548-3.881V6.666z" />
         </g>

@@ -10,7 +10,8 @@ const SvgBlock = (props) =>
     <svg
       xmlns="http://www.w3.org/2000/svg"
       xmlnsXlink="http://www.w3.org/1999/xlink"
-      viewBox="0 0 32 32"
+      width={32}
+      height={32}
       {...props}
     >
       <defs>
@@ -83,7 +84,7 @@ const SvgBlock = (props) =>
         />
         <path
           id="block_svg__g"
-          d="M6.613 4.026L3.711 9l2.876 4.93-1.839 3.209L0 9 4.789.789z"
+          d="M6.613 4.026 3.711 9l2.876 4.93-1.839 3.209L0 9 4.789.789z"
         />
         <linearGradient id="block_svg__c" x1="50%" x2="50%" y1="0%" y2="100%">
           <stop offset="0%" stopColor="#FFF" stopOpacity={0.5} />

@@ -5,7 +5,7 @@
   "main": "./lib/index.js",
   "scripts": {
     "dev": "webpack-dev-server --config ./webpack.dev.js --mode development",
-    "icons": "svgr --config-file ./.svgrc.js -d ./src/Icons ./IconsSource",
+    "icons": "svgr --config-file ./svgr.config.js -d ./src/Icons ./IconsSource",
     "build": "npm run icons && rimraf ./lib && BABEL_ENV=es babel ./src/Icons --out-dir ./lib"
   },
   "files": [
@@ -22,15 +22,15 @@
     "node": ">=8.0.0"
   },
   "devDependencies": {
-    "@babel/cli": "^7.12.13",
-    "@babel/plugin-transform-modules-umd": "^7.12.13",
-    "@babel/preset-env": "^7.12.13",
-    "@babel/preset-react": "^7.12.13",
-    "@svgr/cli": "^5.5.0",
+    "@babel/cli": "^7.16.8",
+    "@babel/plugin-transform-modules-umd": "^7.16.7",
+    "@babel/preset-env": "^7.16.11",
+    "@babel/preset-react": "^7.16.7",
+    "@svgr/cli": "^6.2.1",
     "babel-loader": "^8.2.2",
     "rimraf": "^3.0.0",
-    "webpack": "^4.30.0",
-    "webpack-cli": "^3.3.0",
-    "webpack-dev-server": "^3.3.1"
+    "webpack": "^5.67.0",
+    "webpack-cli": "^4.9.2",
+    "webpack-dev-server": "^4.7.3"
   }
 }

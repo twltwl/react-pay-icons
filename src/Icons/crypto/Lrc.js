@@ -10,7 +10,8 @@ const SvgLrc = (props) =>
     <svg
       xmlns="http://www.w3.org/2000/svg"
       xmlnsXlink="http://www.w3.org/1999/xlink"
-      viewBox="0 0 32 32"
+      width={32}
+      height={32}
       {...props}
     >
       <defs>
@@ -65,7 +66,7 @@ const SvgLrc = (props) =>
         <circle id="lrc_svg__b" cx={16} cy={15} r={15} />
         <path
           id="lrc_svg__e"
-          d="M16 5l9 12.533L16 25l-9-7.467L16 5zm-1.174 6.667L10.913 17l3.913 3.2v-8.533zm2.348 0V20.2l3.913-3.2-3.913-5.333z"
+          d="m16 5 9 12.533L16 25l-9-7.467L16 5zm-1.174 6.667L10.913 17l3.913 3.2v-8.533zm2.348 0V20.2l3.913-3.2-3.913-5.333z"
         />
       </defs>
       <g fill="none" fillRule="evenodd">

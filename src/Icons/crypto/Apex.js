@@ -10,7 +10,8 @@ const SvgApex = (props) =>
     <svg
       xmlns="http://www.w3.org/2000/svg"
       xmlnsXlink="http://www.w3.org/1999/xlink"
-      viewBox="0 0 32 32"
+      width={32}
+      height={32}
       {...props}
     >
       <defs>
@@ -65,7 +66,7 @@ const SvgApex = (props) =>
         <circle id="apex_svg__b" cx={16} cy={15} r={15} />
         <path
           id="apex_svg__e"
-          d="M6 18.25L16 5.5l10 12.75v4.25L16 9.75 6 22.5v-4.25zm10.5 1.25a2.5 2.5 0 110-5 2.5 2.5 0 010 5z"
+          d="M6 18.25 16 5.5l10 12.75v4.25L16 9.75 6 22.5v-4.25zm10.5 1.25a2.5 2.5 0 1 1 0-5 2.5 2.5 0 0 1 0 5z"
         />
       </defs>
       <g fill="none" fillRule="evenodd">

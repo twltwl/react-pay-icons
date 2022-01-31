@@ -8,7 +8,8 @@ const SvgEop = (props) =>
       style: props.style,
     },
     <svg
-      viewBox="0 0 33 32"
+      width={33}
+      height={32}
       xmlns="http://www.w3.org/2000/svg"
       xmlnsXlink="http://www.w3.org/1999/xlink"
       {...props}
@@ -66,7 +67,7 @@ const SvgEop = (props) =>
           />
         </g>
         <path
-          d="M15.75 25l-4.68-12.48-1.89 8.61zm1.23-20.85l-5.13 6.24 5.13 13.11 5.16-13.11zM18.24 25l4.68-12.48 1.86 8.61z"
+          d="m15.75 25-4.68-12.48-1.89 8.61zm1.23-20.85-5.13 6.24 5.13 13.11 5.16-13.11zM18.24 25l4.68-12.48 1.86 8.61z"
           fill="#FEFFFE"
         />
       </g>
