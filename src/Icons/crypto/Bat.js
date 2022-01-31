@@ -10,7 +10,8 @@ const SvgBat = (props) =>
     <svg
       xmlns="http://www.w3.org/2000/svg"
       xmlnsXlink="http://www.w3.org/1999/xlink"
-      viewBox="0 0 32 32"
+      width={32}
+      height={32}
       {...props}
     >
       <defs>
@@ -65,7 +66,7 @@ const SvgBat = (props) =>
         <circle id="bat_svg__b" cx={16} cy={15} r={15} />
         <path
           id="bat_svg__e"
-          d="M6 22.5l10.051-17L26 22.477 6 22.5zm10.027-10.12l-4.108 6.786h8.235l-4.127-6.786z"
+          d="m6 22.5 10.051-17L26 22.477 6 22.5zm10.027-10.12-4.108 6.786h8.235l-4.127-6.786z"
         />
       </defs>
       <g fill="none">

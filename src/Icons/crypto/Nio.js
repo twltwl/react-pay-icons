@@ -10,7 +10,8 @@ const SvgNio = (props) =>
     <svg
       xmlns="http://www.w3.org/2000/svg"
       xmlnsXlink="http://www.w3.org/1999/xlink"
-      viewBox="0 0 32 32"
+      width={32}
+      height={32}
       {...props}
     >
       <defs>
@@ -65,7 +66,7 @@ const SvgNio = (props) =>
         <circle id="nio_svg__b" cx={16} cy={15} r={15} />
         <path
           id="nio_svg__e"
-          d="M16 12.764h-4.822L16 4.5l4.822 8.264H16zm.655 9.736l2.515-4.309 2.411-4.131L26.5 22.5h-9.845zm-3.825-4.309l2.515 4.309H5.5l4.919-8.44 2.41 4.131z"
+          d="M16 12.764h-4.822L16 4.5l4.822 8.264H16zm.655 9.736 2.515-4.309 2.411-4.131L26.5 22.5h-9.845zm-3.825-4.309 2.515 4.309H5.5l4.919-8.44 2.41 4.131z"
         />
       </defs>
       <g fill="none">

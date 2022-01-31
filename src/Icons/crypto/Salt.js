@@ -10,7 +10,8 @@ const SvgSalt = (props) =>
     <svg
       xmlns="http://www.w3.org/2000/svg"
       xmlnsXlink="http://www.w3.org/1999/xlink"
-      viewBox="0 0 32 32"
+      width={32}
+      height={32}
       {...props}
     >
       <defs>
@@ -65,7 +66,7 @@ const SvgSalt = (props) =>
         <circle id="salt_svg__b" cx={16} cy={15} r={15} />
         <path
           id="salt_svg__e"
-          d="M16.5 9.445l5.804 12.214H10.696L16.5 9.445zM16.5 4L7 24h19L16.5 4z"
+          d="m16.5 9.445 5.804 12.214H10.696L16.5 9.445zM16.5 4 7 24h19L16.5 4z"
         />
       </defs>
       <g fill="none">

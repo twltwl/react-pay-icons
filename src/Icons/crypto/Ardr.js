@@ -10,7 +10,8 @@ const SvgArdr = (props) =>
     <svg
       xmlns="http://www.w3.org/2000/svg"
       xmlnsXlink="http://www.w3.org/1999/xlink"
-      viewBox="0 0 32 32"
+      width={32}
+      height={32}
       {...props}
     >
       <defs>
@@ -65,7 +66,7 @@ const SvgArdr = (props) =>
         <circle id="ardr_svg__b" cx={16} cy={15} r={15} />
         <path
           id="ardr_svg__e"
-          d="M15.883 16.19l1.769 2.312L12.5 22l3.383-5.81zM16 5l2.727 4.474L11.455 22H6L16 5zm0 9.842l3.636-2.684L26 22h-4.545L16 14.842z"
+          d="m15.883 16.19 1.769 2.312L12.5 22l3.383-5.81zM16 5l2.727 4.474L11.455 22H6L16 5zm0 9.842 3.636-2.684L26 22h-4.545L16 14.842z"
         />
       </defs>
       <g fill="none" fillRule="evenodd">

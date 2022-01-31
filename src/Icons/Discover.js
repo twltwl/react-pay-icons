@@ -13,19 +13,26 @@ const SvgDiscover = (props) =>
       x={0}
       y={0}
       viewBox="0 0 60 40"
+      style={{
+        enableBackground: "new 0 0 60 40",
+      }}
       xmlSpace="preserve"
       {...props}
     >
       <style>{".discover_svg__st2{fill:#001722}"}</style>
       <path
-        fillRule="evenodd"
-        clipRule="evenodd"
-        fill="#f3f6f9"
+        style={{
+          fillRule: "evenodd",
+          clipRule: "evenodd",
+          fill: "#f3f6f9",
+        }}
         d="M0 0h60v40H0z"
       />
       <path
         d="M31.4 16c-2.2 0-4.1 1.8-4.1 3.9 0 2.3 1.7 4 4.1 4 2.3 0 4.1-1.7 4.1-4-.1-2.1-1.9-3.9-4.1-3.9z"
-        fill="#f48628"
+        style={{
+          fill: "#f48628",
+        }}
       />
       <path
         className="discover_svg__st2"

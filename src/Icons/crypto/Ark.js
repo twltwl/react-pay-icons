@@ -10,7 +10,8 @@ const SvgArk = (props) =>
     <svg
       xmlns="http://www.w3.org/2000/svg"
       xmlnsXlink="http://www.w3.org/1999/xlink"
-      viewBox="0 0 32 32"
+      width={32}
+      height={32}
       {...props}
     >
       <defs>
@@ -65,7 +66,7 @@ const SvgArk = (props) =>
         <circle id="ark_svg__b" cx={16} cy={15} r={15} />
         <path
           id="ark_svg__e"
-          d="M15.947 12.347L5 23.89 15.996 6 27 24 15.947 12.347zm1.588 4.585h-3.422l1.76-1.936 1.662 1.953v-.017zm-6.6 3.177v-.024l1.941-1.987v-.009l5.92-.025 1.998 2.045h-9.858z"
+          d="M15.947 12.347 5 23.89 15.996 6 27 24 15.947 12.347zm1.588 4.585h-3.422l1.76-1.936 1.662 1.953v-.017zm-6.6 3.177v-.024l1.941-1.987v-.009l5.92-.025 1.998 2.045h-9.858z"
         />
       </defs>
       <g fill="none">

@@ -8,7 +8,8 @@ const SvgMoac = (props) =>
       style: props.style,
     },
     <svg
-      viewBox="0 0 32 32"
+      width={32}
+      height={32}
       xmlns="http://www.w3.org/2000/svg"
       xmlnsXlink="http://www.w3.org/1999/xlink"
       {...props}
@@ -70,7 +71,7 @@ const SvgMoac = (props) =>
           />
         </g>
         <path
-          d="M15.792 14.792L9.423 8.423l-.138-.208L7.02 6v17.515h2.284V11.4l4.916 4.985 1.592 1.592 1.592-1.592L22.32 11.4v12.115h2.284V6L22.32 8.215z"
+          d="M15.792 14.792 9.423 8.423l-.138-.208L7.02 6v17.515h2.284V11.4l4.916 4.985 1.592 1.592 1.592-1.592L22.32 11.4v12.115h2.284V6L22.32 8.215z"
           fill="#FFF"
         />
       </g>

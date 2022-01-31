@@ -18,8 +18,9 @@ module.exports = {
     filename: "bundle.js",
   },
   devServer: {
-    contentBase: "./docs",
-    writeToDisk: true,
+    static: {
+      directory: "./docs",
+    },
   },
-  devtool: "cheap-module-eval-source-map",
+  devtool: "inline-nosources-cheap-module-source-map",
 };

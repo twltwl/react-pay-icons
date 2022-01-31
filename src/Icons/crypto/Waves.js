@@ -10,7 +10,8 @@ const SvgWaves = (props) =>
     <svg
       xmlns="http://www.w3.org/2000/svg"
       xmlnsXlink="http://www.w3.org/1999/xlink"
-      viewBox="0 0 32 32"
+      width={32}
+      height={32}
       {...props}
     >
       <defs>
@@ -63,7 +64,7 @@ const SvgWaves = (props) =>
           <stop offset="100%" stopOpacity={0.5} />
         </linearGradient>
         <circle id="waves_svg__b" cx={16} cy={15} r={15} />
-        <path id="waves_svg__e" d="M16 5l10 10-10 10L6 15z" />
+        <path id="waves_svg__e" d="m16 5 10 10-10 10L6 15z" />
       </defs>
       <g fill="none" fillRule="evenodd">
         <use

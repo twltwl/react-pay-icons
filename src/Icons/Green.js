@@ -13,6 +13,9 @@ const SvgGreen = (props) =>
       x={0}
       y={0}
       viewBox="0 0 80.5 26.8"
+      style={{
+        enableBackground: "new 0 0 80.5 26.8",
+      }}
       xmlSpace="preserve"
       {...props}
     >

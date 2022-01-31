@@ -10,7 +10,8 @@ const SvgXvg = (props) =>
     <svg
       xmlns="http://www.w3.org/2000/svg"
       xmlnsXlink="http://www.w3.org/1999/xlink"
-      viewBox="0 0 32 32"
+      width={32}
+      height={32}
       {...props}
     >
       <defs>
@@ -65,7 +66,7 @@ const SvgXvg = (props) =>
         <circle id="xvg_svg__b" cx={16} cy={15} r={15} />
         <path
           id="xvg_svg__e"
-          d="M9.61 9.335L8 6h16l-1.592 3.335H24L15.951 26 8 9.335h1.61zm0 0l6.438 13.33 6.36-13.33H9.611z"
+          d="M9.61 9.335 8 6h16l-1.592 3.335H24L15.951 26 8 9.335h1.61zm0 0 6.438 13.33 6.36-13.33H9.611z"
         />
       </defs>
       <g fill="none">
@@ -82,7 +83,7 @@ const SvgXvg = (props) =>
         <circle cx={16} cy={15} r={14.5} stroke="#000" strokeOpacity={0.097} />
         <use fill="#000" filter="url(#xvg_svg__d)" xlinkHref="#xvg_svg__e" />
         <use fill="#FFF" fillRule="evenodd" xlinkHref="#xvg_svg__e" />
-        <path fill="#FFF" opacity={0.504} d="M16 23.5L8 6h15.999z" />
+        <path fill="#FFF" opacity={0.504} d="M16 23.5 8 6h15.999z" />
       </g>
     </svg>
   );

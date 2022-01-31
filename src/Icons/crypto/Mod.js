@@ -10,7 +10,8 @@ const SvgMod = (props) =>
     <svg
       xmlns="http://www.w3.org/2000/svg"
       xmlnsXlink="http://www.w3.org/1999/xlink"
-      viewBox="0 0 32 32"
+      width={32}
+      height={32}
       {...props}
     >
       <defs>
@@ -83,7 +84,7 @@ const SvgMod = (props) =>
         <circle cx={16} cy={15} r={14.5} stroke="#000" strokeOpacity={0.097} />
         <g fill="#FFF" filter="url(#mod_svg__d)" transform="translate(9 6)">
           <path opacity={0.5} d="M13.985 14.007V1.08L7.673 7.529z" />
-          <path d="M0 0l.304.312 8.467 8.675L0 17.985z" />
+          <path d="m0 0 .304.312 8.467 8.675L0 17.985z" />
         </g>
       </g>
     </svg>

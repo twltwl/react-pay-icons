@@ -10,7 +10,8 @@ const SvgStorm = (props) =>
     <svg
       xmlns="http://www.w3.org/2000/svg"
       xmlnsXlink="http://www.w3.org/1999/xlink"
-      viewBox="0 0 32 32"
+      width={32}
+      height={32}
       {...props}
     >
       <defs>
@@ -65,7 +66,7 @@ const SvgStorm = (props) =>
         <circle id="storm_svg__b" cx={16} cy={15} r={15} />
         <path
           id="storm_svg__e"
-          d="M23 5l-12.029 8.25 6.076 3.875L9 25l13.302-9.208-5.994-3.875z"
+          d="m23 5-12.029 8.25 6.076 3.875L9 25l13.302-9.208-5.994-3.875z"
         />
       </defs>
       <g fill="none" fillRule="evenodd">

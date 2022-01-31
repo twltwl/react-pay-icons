@@ -8,7 +8,8 @@ const SvgStx = (props) =>
       style: props.style,
     },
     <svg
-      viewBox="0 0 32 32"
+      width={32}
+      height={32}
       xmlns="http://www.w3.org/2000/svg"
       xmlnsXlink="http://www.w3.org/1999/xlink"
       {...props}
@@ -64,7 +65,7 @@ const SvgStx = (props) =>
           r={14.5}
         />
         <path
-          d="M19.319 18.033l3.61 5.467h-2.697l-4.24-6.423-4.238 6.423H9.07l3.611-5.453H7.5v-2.07h17v2.056zm5.181-6.138v2.085h-17v-2.084h5.081L9.013 6.5h2.698l4.282 6.509L20.289 6.5h2.698l-3.568 5.395z"
+          d="m19.319 18.033 3.61 5.467h-2.697l-4.24-6.423-4.238 6.423H9.07l3.611-5.453H7.5v-2.07h17v2.056zm5.181-6.138v2.085h-17v-2.084h5.081L9.013 6.5h2.698l4.282 6.509L20.289 6.5h2.698l-3.568 5.395z"
           fill="#FFF"
           fillRule="nonzero"
         />
