@@ -11,7 +11,7 @@ module.exports = {
   resolve: {
     extensions: ["*", ".js", ".jsx"],
   },
-  entry: ["./src/demo"],
+  entry: ["./src/demo.js"],
   output: {
     path: `${__dirname}/docs`,
     publicPath: "/",
@@ -20,6 +20,9 @@ module.exports = {
   devServer: {
     static: {
       directory: "./docs",
+    },
+    devMiddleware: {
+      writeToDisk: true,
     },
   },
   devtool: "inline-nosources-cheap-module-source-map",

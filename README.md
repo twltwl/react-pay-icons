@@ -52,10 +52,8 @@ Place svg file in ./IconsSource and follow build step
 ### Building the package icons
 
 ```sh
-# Create React components from SVGs
+# Build
 npm run icons
-# Build package
-npm run build
 ```
 
 ### Check icons preview
