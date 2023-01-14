@@ -26,7 +26,7 @@ const wrapperStyle = {
   padding: "10px",
   margin: "10px",
   width: "150px",
-  background: "#ccc",
+  background: "#f2f7fc",
 };
 
 const textStyle = {

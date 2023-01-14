@@ -13,7 +13,4 @@ function template(variables, { tpl }) {
 module.exports = {
   template,
   outDir: path.resolve(__dirname, "src", "Icons"),
-  svgoConfig: {
-    plugins: [{ name: "removeDimensions" }],
-  },
 };
