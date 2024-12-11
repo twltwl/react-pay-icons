@@ -13,8 +13,8 @@
   "author": "Tommy Ljungberg",
   "license": "MIT",
   "peerDependencies": {
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react": "^18.2.0 || ^19.0.0",
+    "react-dom": "^18.2.0 || ^19.0.0"
   },
   "repository": "https://github.com/twltwl/react-pay-icons",
   "engines": {
