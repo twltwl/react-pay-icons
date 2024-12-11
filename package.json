@@ -5,7 +5,7 @@
   "main": "./lib/index.js",
   "scripts": {
     "dev": "webpack-dev-server --config ./webpack.dev.js --mode development",
-    "icons": "svgr -d ./lib ./IconsSource"
+    "icons": "svgr --out-dir lib -- IconsSource"
   },
   "files": [
     "/lib"
@@ -23,7 +23,7 @@
   "devDependencies": {
     "@babel/preset-env": "^7.26.0",
     "@babel/preset-react": "^7.26.3",
-    "@svgr/cli": "^6.5.1",
+    "@svgr/cli": "^8.1.0",
     "babel-loader": "^9.2.1",
     "rimraf": "^3.0.0",
     "webpack": "^5.97.1",
