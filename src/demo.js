@@ -1,5 +1,5 @@
 import React from "react";
-import ReactDOM from "react-dom";
+import { createRoot } from "react-dom/client";
 import * as Icons from "../lib/";
 import * as CryptoIcons from "../lib/crypto";
 
@@ -37,7 +37,10 @@ const textStyle = {
   color: "#002223",
 };
 
-ReactDOM.render(
+const domNode = document.getElementById("root");
+const root = createRoot(domNode);
+
+root.render(
   <div>
     <div style={flexProps}>
       {Object.keys(Icons).map((key) => {
