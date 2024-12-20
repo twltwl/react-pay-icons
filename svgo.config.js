@@ -15,7 +15,6 @@ const names = [
   "removeUnknownsAndDefaults",
   "removeNonInheritableGroupAttrs",
   "removeUselessStrokeAndFill",
-  "removeViewBox",
   "cleanupEnableBackground",
   "removeHiddenElems",
   "removeEmptyText",
@@ -33,9 +32,23 @@ const names = [
   "removeDesc",
 ];
 
+/**
+ * @type {import('svgo').Config}
+ */
 module.exports = {
-  plugins: names.map((x) => ({
-    name: x,
-  })),
-  multipass: true,
+  multipass: true, // Optimize SVG with multiple passes
+  plugins: [
+    {
+      name: "preset-default",
+      params: {
+        overrides: {
+          removeViewBox: false, // Keep viewBox attribute
+          sortAttrs: true,      // Better gzip compression
+        },
+      },
+    },
+    ...names.map((name) => ({
+      name,
+    })),
+  ],
 };
