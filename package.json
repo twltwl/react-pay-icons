@@ -2,13 +2,20 @@
   "name": "react-pay-icons",
   "version": "3.2.0",
   "description": "Payment Icons for React applications",
-  "main": "./lib/index.js",
+  "main": "lib/index.js",
+  "module": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "exports": {
+    ".": "./lib/index.js",
+    "./crypto": "./lib/crypto/index.js",
+    "./*": "./lib/*.js"
+  },
   "scripts": {
-    "dev": "webpack-dev-server --config ./webpack.dev.js --mode development",
-    "icons": "svgr -- IconsSource"
+    "icons": "svgr --config-file svgr.config.js -- IconsSource && vite build && tsc",
+    "dev": "vite"
   },
   "files": [
-    "/lib"
+    "lib"
   ],
   "author": "Tommy Ljungberg",
   "license": "MIT",
@@ -21,12 +28,11 @@
     "node": ">=8.0.0"
   },
   "devDependencies": {
-    "@babel/preset-env": "^7.26.0",
-    "@babel/preset-react": "^7.26.3",
     "@svgr/cli": "^8.1.0",
+    "@vitejs/plugin-react": "^4.7.0",
     "babel-loader": "^9.2.1",
-    "webpack": "^5.97.1",
-    "webpack-cli": "^5.1.4",
-    "webpack-dev-server": "^5.1.0"
+    "glob": "^11.0.3",
+    "typescript": "^5.9.2",
+    "vite": "^7.0.6"
   }
 }

@@ -19,10 +19,10 @@ import { Visa } from "react-pay-icons";
 <Visa style={{ margin: 10, width: 100 }} />;
 ```
 
-## Version 2 - Added icons for cryptocurrencies
+## Added icons for cryptocurrencies
 
 ```jsx
-import { Btc } from "react-pay-icons/lib/crypto";
+import { Btc } from "react-pay-icons/crypto";
 
 <Btc style={{ margin: 10, width: 100 }} />;
 ```
@@ -33,11 +33,9 @@ Big thanks to https://github.com/spothq/cryptocurrency-icons
 
 Below the list of the available props:
 
-| Name      | Type   | Default | Description                                          |
-| --------- | ------ | ------- | ---------------------------------------------------- |
-| style     | Object |         | CSS style object                                     |
-| className | String |         | HTML class for you to customize with your own CSS    |
-| ...prop   | \*     |         | Any other prop will be propagated on the SVG element |
+| Name    | Type | Default | Description                                          |
+| ------- | ---- | ------- | ---------------------------------------------------- |
+| ...prop | \*   |         | Any SVG attribute will be propagated on the SVG element |
 
 ## Payment Icons
 
@@ -47,18 +45,17 @@ See https://twltwl.github.io/react-pay-icons/
 
 ### Adding a new icon
 
-Place svg file in ./IconsSource and follow build step
+Place svg file in [`./IconsSource`](./IconsSource) and follow build step
 
-### Building the package icons
+### Building the package
 
 ```sh
-# Build
-npm run icons
+npm run icons # Converts SVGs to React components and compiles the package for distribution
 ```
 
 ### Check icons preview
 
 ```sh
 npm run dev
-# open localhost:8080
+# open link provided by the dev server
 ```
