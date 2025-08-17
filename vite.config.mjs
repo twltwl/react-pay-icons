@@ -1,14 +1,14 @@
-import { resolve } from 'path'
-import { defineConfig } from 'vite'
-import react from '@vitejs/plugin-react'
+import { resolve } from "path";
+import { defineConfig } from "vite";
+import react from "@vitejs/plugin-react";
 
 // Conditional configuration based on command
 export default defineConfig(({ command }) => {
-  if (command === 'serve') {
+  if (command === "serve") {
     // Development configuration
     return {
       plugins: [react()],
-      root: './',
+      root: "./",
     };
   } else {
     // Build configuration (for library)
@@ -17,18 +17,18 @@ export default defineConfig(({ command }) => {
       build: {
         lib: {
           entry: {
-            index: resolve(__dirname, 'src/Icons/index.js'),
-            'crypto/index': resolve(__dirname, 'src/Icons/crypto/index.js'),
+            index: resolve(__dirname, "src/Icons/index.js"),
+            "crypto/index": resolve(__dirname, "src/Icons/crypto/index.js"),
           },
-          formats: ['es'],
+          formats: ["es"],
         },
-        outDir: 'lib',
+        outDir: "lib",
         sourcemap: true,
         rollupOptions: {
-          external: ['react', 'react-dom', 'react/jsx-runtime'],
+          external: ["react", "react-dom", "react/jsx-runtime"],
           output: {
             globals: {
-              react: 'React',
+              react: "React",
             },
             preserveModules: true,
             entryFileNames: ({ name }) => {
@@ -40,4 +40,3 @@ export default defineConfig(({ command }) => {
     };
   }
 });
-
