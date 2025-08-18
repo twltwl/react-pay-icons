@@ -1,43 +1,42 @@
-name: Deploy Demo to GitHub Pages
+name: Deploy Demo Page
 
 on:
   push:
-    branches: ["master"]
-  pull_request: {}
-
-permissions:
-  contents: read
-  pages: write
-  id-token: write
+    branches:
+      - master
+  pull_request:
+    branches:
+      - "**"
 
 jobs:
-  build:
+  build-and-deploy:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - name: Checkout repo
+        uses: actions/checkout@v4
 
-      - uses: actions/setup-node@v4
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
         with:
           node-version: 20
 
-      - run: npm ci
-      - run: npm run build:gh-pages
+      - name: Install dependencies
+        run: npm ci
 
-      # add 404.html for SPA fallback
-      - run: cp gh-pages/index.html gh-pages/404.html
-      - run: touch gh-pages/.nojekyll
+      - name: Build demo page
+        run: npm run build:gh-pages
 
-      - uses: actions/upload-pages-artifact@v3
-        with:
-          path: ./gh-pages
-
-  deploy:
-    needs: build
-    runs-on: ubuntu-latest
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-    steps:
       - name: Deploy to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v4
+        if: github.ref == 'refs/heads/master'
+        uses: peaceiris/actions-gh-pages@v6
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./gh-pages
+          # This overwrites your live master site
+
+      - name: Preview deployment for PRs
+        if: github.event_name == 'pull_request'
+        uses: actions/upload-artifact@v3
+        with:
+          name: pr-demo-page
+          path: ./gh-pages
