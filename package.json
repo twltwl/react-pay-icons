@@ -12,7 +12,8 @@
   },
   "scripts": {
     "icons": "svgr --config-file svgr.config.js -- IconsSource && vite build && tsc",
-    "dev": "vite"
+    "dev": "vite",
+    "build:gh-pages": "vite build --config vite.config.gh-pages.mjs"
   },
   "files": [
     "lib"
